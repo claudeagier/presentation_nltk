@@ -10,11 +10,11 @@ Welcome to presentation_ntlk's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   ./history.rst
 
+.. Indices and tables
+.. ==================
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
