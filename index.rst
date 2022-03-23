@@ -11,6 +11,9 @@ Welcome to presentation_ntlk's documentation!
    :caption: Contents:
 
    ./history.rst
+   ./principe.rst
+   ./vocabulary.rst
+   ./user_guide.rst
 
 .. Indices and tables
 .. ==================
