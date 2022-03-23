@@ -10,5 +10,3 @@ make html
 
 double clic sur _build/html/index.html pour ouvrir dans ton navigateur favori
 
-
-bonjour 
