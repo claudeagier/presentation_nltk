@@ -3,7 +3,7 @@ Un peu de Vocabulaire
 
 Tokenization
 ------------
-découpage du texte en token
+découpage du texte en token, le token étant une unité sémantique avec un sens.
 
 Stop-word
 ---------
