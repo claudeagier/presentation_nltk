@@ -24,10 +24,12 @@ En 2001, sachant que la dernière version stable date maintenant de 2021.
 
 Domaines couvert par la bibliothèque : 
 -------------------------------------
-stats, machine learning, IA, sciences cognitives, linguistique, études sémantiques …
+
+Stats, machine learning, IA, sciences cognitives, linguistique, études sémantiques …
 
 Objectif(s) de la bibliothèque : 
 --------------------------------
+
 pourquoi a-t-elle été mise en place ; à quelle problématique répond-elle.
 
 NLTK a, à son origine, deux buts : la recherche et l'enseignement dans le domaine du Natural Language Processing(NLP, l'étude et la structure du langage). Citons la linguistique, l'intelligence artificielle, les sciences cognitives, les sciences de l'information et le machine learning parmi ses bénéficiaires directs.
@@ -35,14 +37,15 @@ NLTK a, à son origine, deux buts : la recherche et l'enseignement dans le domai
 Citons les auteurs (Introduction du livre "Natural Language Programming with Python")
 
 "NLTK a été conçue avec 4 objectifs : 
-- *simplicité* : créer un framework cohérent avec des blocs substantiels et facile à utiliser, donnant aux utilisateurs des outils pratiques pour l'étude du NLP. Ce afin d'éviter les exercices fastidieux de maintenance dans un océan de données sémantiques.
 
--*consistence* :un framework uniformisé, avec une interface cohérente et consistente, des structures de données (ndlr: les corpus de data fournis avec la bibli, je pense), le tout avec des méthodes aux noms parlants.
+- *Simplicité* : créer un framework cohérent avec des blocs substantiels et faciles à utiliser, donnant aux utilisateurs des outils pratiques pour l'étude du NLP. Ce afin d'éviter les exercices fastidieux de maintenance dans un océan de données sémantiques.
 
--*Elasticité* : Donner un structure dans laquelle il est facile d'implémenter de nouveaux modules qui s'intégreraient aisément : alternatives comme concurrents.
+- *Consistence* :un framework uniformisé, avec une interface cohérente et consistente, des structures de données (ndlr: les corpus de data fournis avec la bibli, je pense), le tout avec des méthodes aux noms parlants.
 
--*Modularité* : donner des blocs, des éléments, des composants uniques qui peuvent s'utiliser sans devoir comprendre l'ensemble de la bibliothèque. "
-ndlr encore : NLTK est une gigantesque poupée gigogne.
+- *Elasticité* : Donner une structure dans laquelle il est facile d'implémenter de nouveaux modules qui s'intégreraient aisément : alternatives comme concurrents.
+
+- *Modularité* : donner des blocs, des éléments, des composants uniques qui peuvent s'utiliser sans devoir comprendre l'ensemble de la bibliothèque. "
+**ndlr encore : NLTK est une gigantesque poupée gigogne.**
 
 A cela, les auteurs ajoutent trois aspects qu'ils on délibérément "omis" de traiter en créant cette bibliothèque :
 
@@ -50,6 +53,7 @@ A cela, les auteurs ajoutent trois aspects qu'ils on délibérément "omis" de t
 
 Ses concurrents (le cas échéant) : 
 ----------------------------------
+
 quelles sont les autres framework/bibliothèques 'similaires'
 openNLP.
 Stanford CoreNLP.
@@ -62,6 +66,7 @@ TextBlob.
 
 Communauté : 
 ------------
+
 qui a développé cette bibliothèque, qui la maintient, la communauté est-elle active
 
 La bibliothèque a été développée par Steven Bird et Edward Loper, du département d'informatique et science de l'information, à l'université de Pennsylvanie. Ils ont d'ailleurs définis leur approche dans un ouvrage : "Natural language processing with Python". La communauté est toujours active à ce jour. Sur Github elle compte 133000 usagers, 354 contributeurs au rang desquels les fondateurs de NLTK. Au regard des graphiques Github, des pics de contribution, et donc de modifications, ajouts, retraits, ont lieu à peu près tous les 4/5 ans depuis une dizaine d'années..
