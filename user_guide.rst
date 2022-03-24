@@ -28,6 +28,7 @@ nltk possède aussi un corpus de textes très fourni pour aiguiser ses armes
 ::
     from nltk.corpus import hamlet
 
+
 .. figure:: ./Images/nltk_ide.png
 
 Principes

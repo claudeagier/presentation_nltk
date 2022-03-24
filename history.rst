@@ -24,7 +24,7 @@ Créaation en 2001, sachant que la dernière version date maintenant de 2021.
 
 
 Domaines couvert par la bibliothèque : 
--------------------------------------
+--------------------------------------
 
 Stats, machine learning, IA, sciences cognitives, linguistique, études sémantiques, sachant que la bibliothèque compte plus de 300 modules !
 
@@ -67,6 +67,7 @@ Ses concurrents (le cas échéant) :
 * spaCy(Python)
 * Watson Tone Analyzer (IBM)
 * TextBlob(Python)
+
 
 Communauté : 
 ------------
