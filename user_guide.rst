@@ -18,6 +18,18 @@ usage
 
     import nltk
 
+    #où l'une de ses méthodes 
+
+    from nltk.stem.snowball import SnowballStemmer
+    from nltk.probability import FreqDist
+    from nltk.tokenize import word_tokenize
+
+nltk possède aussi un corpus de textes très fourni pour aiguiser ses armes
+::
+    from nltk.corpus import hamlet
+
+.. figure:: ./Images/nltk_ide.png
+
 Principes
 ---------
 à quoi ça sert
@@ -25,7 +37,7 @@ Principes
 
 Schéma
 ------
-
+.. figure:: ./Images/schema.png
 
 Vocabulaire
 -----------

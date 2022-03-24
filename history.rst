@@ -29,6 +29,7 @@ Domaines couvert par la bibliothèque :
 Stats, machine learning, IA, sciences cognitives, linguistique, études sémantiques, sachant que la bibliothèque compte plus de 300 modules !
 
 
+
 Objectif(s) de la bibliothèque : 
 --------------------------------
 
