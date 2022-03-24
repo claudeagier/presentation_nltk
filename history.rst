@@ -50,7 +50,7 @@ Citons les auteurs (Introduction du livre "Natural Language Programming with Pyt
 - *Modularité* : donner des blocs, des éléments, des composants uniques qui peuvent s'utiliser sans devoir comprendre l'ensemble de la bibliothèque. "
 **ndlr encore : NLTK est une gigantesque poupée gigogne.**
 
-A cela, les auteurs ajoutent trois aspects qu'ils on délibérément "omis" de traiter en créant cette bibliothèque :
+A cela, les auteurs ajoutent trois aspects qu'ils ont délibérément "omis" de traiter en créant cette bibliothèque :
 
 "D'abord, NLTK est une boîte à outils, pas une encyclopédie exhaustive ou un système destiné au NLP [...], ensuite, NLTK est une boîte à outils suffisamment élaborée pour remplir de nombreuses analyses et tâches sans pour autant être optimisée en termes de performances physiques. Nous avons choisi la commodité d'utilisation et de programmation. [...] Enfin, nous avons évité une programmation trop poussive puisque nous croyons plutôt en la logique et l'ingéniosité, plutôt qu'en d'indéchiffrables salmigondis algorithmiques".
 
