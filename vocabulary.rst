@@ -37,7 +37,7 @@ Cette méthode consiste à analyser la nature sémantique des mots d'un texte : 
 
 Chunking
 ---------
-Chunk = morceau. Rassembler des éléments de langages individuels en plus gros groupes (verbeaux, nominaux, complèments divers etc.) nltk.ne_chunk
+Chunk = morceau. Rassembler des éléments de langages individuels en plus gros groupes (verbaux, nominaux, complèments divers etc.) nltk.ne_chunk
 
 N.E.R. : Name Entity Recognition 
 --------------------------------

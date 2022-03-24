@@ -14,7 +14,7 @@ NLTK une nouvelle marque de moto japonaise ?
    ./principle.rst
    ./vocabulary.rst
    ./user_guide.rst
-   ./Essai.rst
+   ./practice.rst
    
 
 .. Indices and tables
