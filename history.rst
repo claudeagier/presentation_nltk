@@ -40,7 +40,7 @@ Citons les auteurs (Introduction du livre "Natural Language Programming with Pyt
 
 - *Simplicité* : créer un framework cohérent avec des blocs substantiels et faciles à utiliser, donnant aux utilisateurs des outils pratiques pour l'étude du NLP. Ce afin d'éviter les exercices fastidieux de maintenance dans un océan de données sémantiques.
 
-- *Consistence* :un framework uniformisé, avec une interface cohérente et consistente, des structures de données (ndlr: les corpus de data fournis avec la bibli, je pense), le tout avec des méthodes aux noms parlants.
+- *Consistence* : un framework uniformisé, avec une interface cohérente et consistente, des structures de données (ndlr: les corpus de data fournis avec la bibli, je pense), le tout avec des méthodes aux noms parlants.
 
 - *Elasticité* : Donner une structure dans laquelle il est facile d'implémenter de nouveaux modules qui s'intégreraient aisément : alternatives comme concurrents.
 
