@@ -4,7 +4,8 @@ NLTK dans la pratique
 .. figure:: ./Images/idea.png
     :align: center
 
-
+Démonstration
+-------------
 
 
 
@@ -13,4 +14,4 @@ NLTK dans la pratique
 
 
 À  vous de jouer !
-==================
+------------------

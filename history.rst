@@ -59,14 +59,14 @@ Ses concurrents (le cas échéant) :
 ----------------------------------
 
 
-openNLP (Apache)
-Stanford CoreNLP (Python)
-Amazon Comprehend (API Amazon)
-Google Cloud Natural Language (API)
-FuzzyWuzzy(Python)
-spaCy(Python)
-Watson Tone Analyzer (IBM)
-TextBlob(Python)
+* openNLP (Apache)
+* Stanford CoreNLP (Python)
+* Amazon Comprehend (API Amazon)
+* Google Cloud Natural Language (API)
+* FuzzyWuzzy(Python)
+* spaCy(Python)
+* Watson Tone Analyzer (IBM)
+* TextBlob(Python)
 
 Communauté : 
 ------------
