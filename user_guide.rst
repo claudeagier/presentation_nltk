@@ -25,7 +25,7 @@ Principes
 
 Schéma
 ------
-représenter de façon visuelle comment elle fonctionne
+
 
 Vocabulaire
 -----------
