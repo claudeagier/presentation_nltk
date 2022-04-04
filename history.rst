@@ -11,7 +11,7 @@ Qui ?
 **Edward Loper** est actuellement dans la recherche scientifique chez BBN Technologies (aerospatiale).
 Il a une thèse en Computer Science. Ses recherches actuelles portent sur le linguistique informatique et le machine learning. C'est lui le designer à l'origine de NLTK, mais aussi d'epydoc.
 
-**Ewan Klein** Chercheur dans divers domaines : linguistique théorique, phonologie informatique, syntaxe et sémantique, dialogue parlé avec des machines, text mining dans les domaines de la biologie médivale et de l'histoire digitale, l'utilisation des différentes formes de données dans des contextes de recherches, et le I.O.T.
+**Ewan Klein** est chercheur dans divers domaines : linguistique théorique, phonologie informatique, syntaxe et sémantique, dialogue parlé avec des machines, text mining dans les domaines de la biologie médivale et de l'histoire digitale, l'utilisation des différentes formes de données dans des contextes de recherches, et le I.O.T.
 
 
 Quand ?
@@ -47,14 +47,14 @@ D'après les auteurs : (Introduction du livre "Natural Language Programming with
 
 - *Modularité* : donner des blocs, des éléments, des composants uniques qui peuvent s'utiliser sans devoir comprendre l'ensemble de la bibliothèque."
 
-**ndlr encore : NLTK est une gigantesque poupée gigogne.**
+
 
 A cela, les auteurs ajoutent trois aspects qu'ils ont délibérément "omis" de traiter en créant cette bibliothèque :
 
 ::
     D'abord, NLTK est une boîte à outils, pas une encyclopédie exhaustive ou un système destiné au NLP [...], ensuite, NLTK est une boîte à outils suffisamment élaborée pour remplir de nombreuses analyses et tâches sans pour autant être optimisée en termes de performances matérielles. Nous avons choisi la commodité d'utilisation et de programmation. [...] Enfin, nous avons évité une programmation trop poussive puisque nous croyons plutôt en la logique et l'ingéniosité, plutôt qu'en d'indéchiffrables salmigondis algorithmiques".
 
-Ses concurrents (le cas échéant) : 
+Ses concurrents : 
 ----------------------------------
 
 
