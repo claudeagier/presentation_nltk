@@ -1,3 +1,4 @@
+
 Un peu d'histoire
 ===============
 NLTK : Natural Language Tool Kit
@@ -50,8 +51,8 @@ D'après les auteurs : (Introduction du livre "Natural Language Programming with
 
 A cela, les auteurs ajoutent trois aspects qu'ils ont délibérément "omis" de traiter en créant cette bibliothèque :
 
-"D'abord, NLTK est une boîte à outils, pas une encyclopédie exhaustive ou un système destiné au NLP [...], ensuite, NLTK est une boîte à outils suffisamment élaborée pour remplir de nombreuses analyses et tâches sans pour autant être optimisée en termes de performances matérielles. Nous avons choisi la commodité d'utilisation et de programmation. [...] Enfin, nous avons évité une programmation trop poussive puisque nous croyons plutôt en la logique et l'ingéniosité, plutôt qu'en d'indéchiffrables salmigondis algorithmiques".
-
+::
+    D'abord, NLTK est une boîte à outils, pas une encyclopédie exhaustive ou un système destiné au NLP [...], ensuite, NLTK est une boîte à outils suffisamment élaborée pour remplir de nombreuses analyses et tâches sans pour autant être optimisée en termes de performances matérielles. Nous avons choisi la commodité d'utilisation et de programmation. [...] Enfin, nous avons évité une programmation trop poussive puisque nous croyons plutôt en la logique et l'ingéniosité, plutôt qu'en d'indéchiffrables salmigondis algorithmiques".
 
 Ses concurrents (le cas échéant) : 
 ----------------------------------

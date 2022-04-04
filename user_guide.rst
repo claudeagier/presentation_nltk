@@ -8,14 +8,26 @@ Python versions 3.7, 3.8, 3.9 or 3.10
 
 Installation
 ------------
-::
 
+Installation du package
+::
     pip install --user -U nltk
 
-usage
------
-::
 
+Installation des models et des datasets prédéfinis
+::
+    en ligne de commande
+    python -m nltk.downloader popular
+
+    ou dans un notebook
+    nltk.download('popular')
+
+.. figure:: ./Images/nltk_ide.png
+
+Usage
+------
+
+::
     import nltk
 
     #où l'une de ses méthodes 
@@ -27,9 +39,6 @@ usage
 nltk possède aussi un corpus de textes très fourni pour aiguiser ses armes
 ::
     from nltk.corpus import hamlet
-
-
-.. figure:: ./Images/nltk_ide.png
 
 Principes
 ---------
