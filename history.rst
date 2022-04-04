@@ -1,19 +1,15 @@
+.. role:: red 
+.. role:: red-bold
 
-.. raw:: html
-
-    <style> .red {color:#aa0060; font-weight:bold; font-size:16px} </style>
-
-.. role:: red
-
-:red:`Un peu d'histoire`
-===============================
+Un peu d'histoire
+================================
 
 NLTK : Natural Language Tool Kit
 
 Qui ?
 -----------------
 
-**Steven Bird** a étudié l'ingénierie informatique à l'Université de Melbourne et réalisé une thèse en linguistique informatique à l'Université d'Edinburgh. Il a aussi étudié, sur le terrain, les langues d'Afrique de l'Ouest, d'Amérique du Sud, d'Asie Centrale, Mélanésie et Australie.
+:red-bold:`Steven Bird` a étudié l'ingénierie informatique à l'Université de Melbourne et réalisé une thèse en linguistique informatique à l'Université d'Edinburgh. Il a aussi étudié, sur le terrain, les langues d'Afrique de l'Ouest, d'Amérique du Sud, d'Asie Centrale, Mélanésie et Australie.
 
 **Edward Loper** est actuellement dans la recherche scientifique chez BBN Technologies (aerospatiale).
 Il a une thèse en Computer Science. Ses recherches actuelles portent sur le linguistique informatique et le machine learning. C'est lui le designer à l'origine de NLTK, mais aussi d'epydoc.
