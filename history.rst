@@ -1,6 +1,13 @@
 
-:textcolor: `<red> Un peu d'histoire`
-===========================================
+.. raw:: html
+
+    <style> .red {color:#aa0060; font-weight:bold; font-size:16px} </style>
+
+.. role:: red
+
+:red:`Un peu d'histoire`
+===============================
+
 NLTK : Natural Language Tool Kit
 
 Qui ?
