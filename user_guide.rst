@@ -40,9 +40,6 @@ Schéma
 ------
 .. figure:: ./Images/schema.png
 
-Vocabulaire
------------
-quels sont les mots spécifiques à cette bibliothèque
 
 Méthode
 -------
