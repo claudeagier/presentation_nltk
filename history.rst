@@ -51,12 +51,23 @@ D'après les auteurs : (Introduction du livre "Natural Language Programming with
 
 A cela, les auteurs ajoutent trois aspects qu'ils ont délibérément "omis" de traiter en créant cette bibliothèque :
 
-::
-    D'abord, NLTK est une boîte à outils, pas une encyclopédie exhaustive ou un système destiné au NLP [...], ensuite, NLTK est une boîte à outils suffisamment élaborée pour remplir de nombreuses analyses et tâches sans pour autant être optimisée en termes de performances matérielles. Nous avons choisi la commodité d'utilisation et de programmation. [...] Enfin, nous avons évité une programmation trop poussive puisque nous croyons plutôt en la logique et l'ingéniosité, plutôt qu'en d'indéchiffrables salmigondis algorithmiques".
+
+"D'abord, NLTK est une boîte à outils, pas une encyclopédie exhaustive ou un système destiné au NLP [...], ensuite, NLTK est une boîte à outils suffisamment élaborée pour remplir de nombreuses analyses et tâches sans pour autant être optimisée en termes de performances matérielles. Nous avons choisi la commodité d'utilisation et de programmation. [...] Enfin, nous avons évité une programmation trop poussive puisque nous croyons plutôt en la logique et l'ingéniosité, plutôt qu'en d'indéchiffrables salmigondis algorithmiques."
+
+**Et plus concrètement, dans la vie de tous les jours :**
+
+- traduction de texte (DeepL par exemple)
+- correcteur orthographique
+- résumé automatique d’un contenu
+- synthèse vocale
+- classification de texte
+- analyse d’opinion/sentiment
+- prédiction du prochain mot sur smartphone
+- extraction des entités nommées depuis un texte [#]_
+
 
 Ses concurrents : 
-----------------------------------
-
+-------------------------------
 
 * openNLP (Apache)
 * Stanford CoreNLP (Python)
@@ -73,3 +84,12 @@ Communauté :
 
 La bibliothèque a été principalement développée par Steven Bird et Edward Loper, du département d'informatique et science de l'information, à l'université de Pennsylvanie. Ils ont d'ailleurs définis leur approche dans un ouvrage : "Natural language processing with Python". La communauté est toujours active à ce jour. Sur Github elle compte 133000 usagers, 354 contributeurs au rang desquels les fondateurs de NLTK. Au regard des graphiques Github, des pics de contribution, et donc de modifications, ajouts, retraits, ont lieu à peu près tous les 4/5 ans depuis une dizaine d'années..
 
+
+
+
+
+
+
+
+
+.. [#] https://www.stat4decision.com/fr/traitement-langage-naturel-francais-tal-nlp/

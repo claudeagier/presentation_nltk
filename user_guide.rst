@@ -42,11 +42,12 @@ nltk possède aussi un corpus de textes très fourni pour aiguiser ses armes
 
 Principes
 ---------
-à quoi ça sert
-	analyse d’un corpus de texte et prédiction
 
-Schéma
-------
+- Pré-traitement : une étape qui cherche à standardiser du texte afin de rendre son usage plus facile
+- Représentation du texte comme un vecteur : Cette étape peut être effectuée via des techniques de sac de mots (Bag of Words) ou Term Frequency-Inverse Document Frequency (Tf-IdF). On peut également apprendre des représentations vectorielles (embedding) par apprentissage profond.
+- Classification, trouver la phrase la plus similaire… (optionnel)
+
+
 .. figure:: ./Images/schema.png
 
 
