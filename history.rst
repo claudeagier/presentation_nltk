@@ -27,7 +27,7 @@ Stats, machine learning, IA, sciences cognitives, linguistique, études sémanti
 
 .. NOTE::
 
-    Bien que couvrant plusieurs langues - dont le français, NLTK est avant une bibliothèque anglophone.
+    Bien que couvrant plusieurs langues - dont le français, NLTK est avant tout une bibliothèque anglophone.
 
 
 Objectifs de la bibliothèque : 
