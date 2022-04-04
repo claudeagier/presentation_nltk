@@ -1,26 +1,29 @@
 Un peu de Vocabulaire
 =====================
 
+.. NOTE::
+    Nous allons bien sûr rester ici dans le domaine du vocabulaire propre à la bibliothèque et ne pas nous attarder sur des notions de linguistique qui s'avéreraient par trop complexes.
+
 Tokenization
 ------------
-découpage du texte en token, le token étant la plus petite unité sémantique avec un sens grammatical.
+Il s'agit de découper le texte en "tokens", le token étant une sémantique individuelle avec un sens grammatical. En tokenizant, si un mot apparaît plusieurs fois dans le texte, il sera compté plusieiurs.
 
 Stop-word
 ---------
-les mots qui n'apportent pas de sens au texte, les articles, les pronoms
+Ce sont les mots qui sont généralement filtrés avant de traiter un langage. Ils regroupent les mots les plus communs d'un langage (articles, prépositions, prono,s, conjonctions, etc.) qui n'apportent pas beaucoup d'information quant au texte.
 
 Stemming
 --------
-Un même mot peut se retrouver sous différentes formes en fonction du genre (masculin féminin), du nombre (singulier, pluriel), la personne (moi, toi, eux…) etc. Le stemming désigne généralement le processus qui consiste à découper la fin des mots afin de ne conserver que la racine du mot.
+Un même mot peut se retrouver sous différentes formes en fonction du genre (masculin féminin), du nombre (singulier, pluriel), de la personne (moi, toi, eux…) etc. Le stemming désigne généralement le processus qui consiste à découper la fin des mots afin de ne conserver que la racine du mot.
 
-lemmatization
+Lemmatisation
 -------------
 Cela consiste à réaliser la même tâche mais en utilisant un vocabulaire et une analyse fine de la construction des mots. La lemmatisation permet donc de supprimer uniquement les terminaisons inflexibles et donc à isoler la forme canonique du mot, connue sous le nom de lemme.
 
 Term-Frequency (TF)
 -------------------
 
-cette méthode consiste à compter le nombre d’occurrences des tokens présents dans le corpus pour chaque texte. Chaque texte est alors représenté par un vecteur d’occurrences. On parle généralement de Bag-Of-Word, ou sac de mots en français.
+Cette méthode consiste à compter le nombre d’occurrences de mots présents dans le corpus pour chaque texte. Chaque texte est alors représenté par un vecteur d’occurrences. On parle généralement de Bag-Of-Word, ou sac de mots en français.
 
 .. NOTE::
 
@@ -28,25 +31,26 @@ cette méthode consiste à compter le nombre d’occurrences des tokens présent
 
 Term Frequency-Inverse Document Frequency (TF-IDF)
 --------------------------------------------------
-cette méthode consiste à compter le nombre d’occurrences des tokens présents dans le corpus pour chaque texte, que l’on divise ensuite par le nombre d’occurrences total de ces même tokens dans tout le corpus.
+Cette méthode consiste à compter le nombre d’occurrences de mots présents dans le corpus pour chaque texte, que l’on divise ensuite par le nombre d’occurrences total de ces mêmes mots dans tout le corpus.
 
 
 P.O.S. : Parts Of Speech / Tagging
 ----------------------------------
-Cette méthode consiste à analyser la nature sémantique des mots d'un texte : noms, pronoms, adjectifs, verbes, adverbes, conjonctions etc. (méthode nltk.pos_tag)
+Cette méthode consiste à analyser la nature sémantique des mots d'un texte : noms, pronoms, adjectifs, verbes, adverbes, conjonctions etc. Il existe plus de 36 catégories de mots (NN pour nom, NNP pour nom propre, DET pour déterminant, etc.).
 
 Chunking
 ---------
-Chunk = morceau. Rassembler des éléments de langages individuels en plus gros groupes (verbaux, nominaux, complèments divers etc.) nltk.ne_chunk
+Chunk = morceau. Rassembler des éléments de langages individuels en plus gros groupes (verbaux, nominaux, complèments divers etc.)
 
 N.E.R. : Name Entity Recognition 
 --------------------------------
 
-Vient en complémentarité de la tokenization d'une texte pour identifier des catégories de noms : entreprises, locations, gopolitiques, organisations, personnes, géo-sociologiques). Se fait également à l'aide de la méthode de chunking
+Vient en complémentarité de la tokenization d'une texte pour identifier des catégories de noms : entreprises, locations, gopolitiques, organisations, personnes, géo-sociologiques). Se fait également à l'aide de la méthode de chunking.
 
 
-Syntax trees
-------------
+Arbre syntaxique
+-----------------
+Il représente la structure syntaxique d'une phrase. Dans la bibliothèque NTLK, l'arbre regroupe donne une représentation visuelle de l'organisation syntaxique de la phrase, basée sur le travail de tagging . Chaque rameau est relié à une branche par un "node" (noeud), elle même reliée au tronc (généralement le sujet de la phrase).
 
 .. figure:: ./Images/syntax_tree.png
 
@@ -54,5 +58,5 @@ Syntax trees
 .. WARNING::
 
     Plus le vocabulaire du corpus est riche, plus la taille des vecteurs est grande, ce qui peut représenter un problème pour les modèles d’apprentissage.
-    Le comptage d’occurrence des mots ne permet pas de rendre compte de leur agencement et donc du sens des phrases.
+    Le comptage d’occurrences de mots ne permet pas de rendre compte de leur agencement et donc du sens des phrases.
 
