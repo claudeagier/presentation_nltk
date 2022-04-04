@@ -46,7 +46,7 @@ D'après les auteurs : (Introduction du livre "Natural Language Programming with
 
 - *Modularité* : donner des blocs, des éléments, des composants uniques qui peuvent s'utiliser sans devoir comprendre l'ensemble de la bibliothèque."
 
-**ndlr encore : NLTK est une gigantesque poupée gigogne.**
+
 
 A cela, les auteurs ajoutent trois aspects qu'ils ont délibérément "omis" de traiter en créant cette bibliothèque :
 
