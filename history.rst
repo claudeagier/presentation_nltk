@@ -1,6 +1,6 @@
 
-Un peu d'histoire
-===============
+:textcolor:`<#FF0000>Un peu d'histoire`
+===========================================
 NLTK : Natural Language Tool Kit
 
 Qui ?
