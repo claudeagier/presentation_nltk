@@ -14,7 +14,7 @@ Installation
     pip install --user -U nltk
 
 
-:text-bold:`Installation des models et des datasets prédéfinis`
+:text-bold:`Installation des modèles et des datasets prédéfinis`
 ::
     #en ligne de commande
     
@@ -33,9 +33,10 @@ Usage
 
     #où l'une de ses méthodes 
 
-    #from nltk.stem.snowball import SnowballStemmer
-    #from nltk.probability import FreqDist
-    #from nltk.tokenize import word_tokenize
+    from nltk.stem.snowball import SnowballStemmer
+    from nltk.probability import FreqDist
+    from nltk.tokenize import word_tokenize
+
 
 NLTK possède aussi un corpus de textes très fourni pour aiguiser ses armes
 ::
