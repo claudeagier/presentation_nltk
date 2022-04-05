@@ -14,7 +14,7 @@ https://www.nltk.org/
 Un livre
 ~~~~~~~~~
 
-:text-bold:`Natural Language Processing with Python, by Edward Loper, Ewan Klein, and Steven Bird`
+Bird, Steven, Edward Loper and Ewan Klein (2009), *Natural Language Processing with Python.* O’Reilly Media Inc.
 
 Vidéos
 ~~~~~~~~~
