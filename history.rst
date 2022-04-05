@@ -27,7 +27,7 @@ Quelques domaines d'utilisation de la bibliothèque
 ---------------------------------------------------
 :text-bold:`Domaines généraux`
 
-Stats, machine learning, IA, sciences cognitives, linguistique, études sémantiques, sachant que la bibliothèque compte plus de 300 modules !
+Stats, machine learning, IA, sciences cognitives, linguistique, études sémantiques, sachant que la bibliothèque compte plus de 300 packages et modules !
 
 .. NOTE::
 

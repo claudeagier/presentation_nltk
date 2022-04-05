@@ -66,3 +66,10 @@ html_css_files = [
 'custom.css'
 ]
 
+html_logo = '_build/html/_static/python_nltk.png'
+
+html_theme_options = {
+    'logo_only': True,
+    'display_version': False,
+}
+

@@ -1,3 +1,4 @@
+
 .. role:: text-bold
 
 Comment ça marche
@@ -44,7 +45,7 @@ Utiliser NTLK
     from nltk.tokenize import word_tokenize
 
 
-NLTK possède aussi un corpus de textes très fourni pour aiguiser ses armes
+NLTK possède aussi un corpus de textes très fourni pour entraîner ses propres modèles.
 ::
     from nltk.corpus import hamlet
 
@@ -72,4 +73,7 @@ NLTK fonctionne avec Python version 2 & 3
 Technologies
 ------------
 NLTK possède un ensemble de sous-packages et sous-modules pour la visualisation et l'intégration d'API (notamment des API en liens avec les réseaux sociaux)
-Les dernières failles de sécurité repertoriées (et réparées) concernaient de possibles attaques ReDoS (Regular Expression Deniol of Service)
+Les dernières failles de sécurité repertoriées (et réparées) concernaient de possibles attaques ReDoS (Regular Expression Deniol of Service).
+
+Limites
+--------

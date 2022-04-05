@@ -1,3 +1,6 @@
+
+.. role:: text-bold
+
 Annexes
 ========
 

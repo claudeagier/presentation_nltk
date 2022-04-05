@@ -8,7 +8,8 @@ NLTK une nouvelle marque de moto japonaise ?
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Table des matières :
+   
 
    ./history.rst
    ./vocabulary.rst
