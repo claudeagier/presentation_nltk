@@ -47,6 +47,9 @@ N.E.R. : Name Entity Recognition
 
 Vient en complémentarité de la tokenization d'une texte pour identifier des catégories de noms : entreprises, locations, gopolitiques, organisations, personnes, géo-sociologiques). Se fait également à l'aide de la méthode de chunking.
 
+Parsing
+--------
+Méthode utilisée pour passer en revue tous les éléments d'un texte afin d'en dégager une arborescence. Bien qu'il puisse être utilisé pour identifier les différents éléments d'un texte, le parsing peut aussi servir à analyser les morphèmes (soit les composantes morphologiques d'un mot).
 
 Arbre syntaxique
 -----------------

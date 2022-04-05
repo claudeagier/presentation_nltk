@@ -1,3 +1,5 @@
+.. role:: text-bold
+
 Comment ça marche
 =================
 
@@ -24,10 +26,14 @@ Installation
     
     nltk.download('popular')
 
+
+
 .. figure:: ./Images/nltk_ide.png
 
-Usage
-------
+Utiliser NTLK
+--------------
+
+:text-bold:`Import de bibliothèques ou méthodes, classes, modules`
 ::
     import nltk
 
