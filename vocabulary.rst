@@ -1,11 +1,40 @@
 
 .. role:: text-bold
+.. figure:: ./Images/voc.jpg 
+    :align: center 
 
 Un peu de Vocabulaire
 =====================
 
+
 .. NOTE::
     Nous allons bien sûr rester ici dans le domaine du vocabulaire propre à la bibliothèque et ne pas nous attarder sur des notions de linguistique qui s'avéreraient par trop complexes.
+
+Langage
+-------
+Au sens large, le langage se définit comme un système de signes qui associe des mots selon des règles grammaticales précises, il renvoie à la faculté de raisonner, de nommer les choses et de communiquer avec autrui.
+
+.. NOTE::
+    Au passage, ceci est un mythe, merci de l'oublier pour de bon.
+   
+   
+.. figure:: ./Images/wrong.png
+
+Sens
+----
+En linguistique, est la signification d'une expression (mot, syntagme, phrase, énoncé, etc.), c'est-à-dire l'idée qui y est associée, dite aussi dénotation, avec ou sans connotations. Les interrogations au sujet de ce que constitue la signification, ou le sens, sont à la base de la philosophie du langage.
+
+Analyse sémantique
+------------------
+L’analyse sémantique consiste ainsi à établir la signification d’une phrase en utilisant le sens des éléments la composant. Dans la NLP, elle s'appuie sur les éléments suivants :
+
+- l’approche linguistique, avec l'établissement a priori des règles en étudiant le langage
+- l’approche statistique, avec pour base l’analyse de corpus importants, à partir desquels la machine va extraire des règles grâce à l’apprentissage automatique (machine learning);
+- les approches hybrides, situées entre linguistique et statistique qui permettent d’obtenir de meilleurs résultats.
+
+Analyse lexicale
+----------------
+L'analyse lexicale est fondée sur la statistique fréquentielle, c'est-à-dire la redondande des traces lexicales et les proximités entre les mots.
 
 Tokenization
 ------------
