@@ -63,7 +63,14 @@ Principes
 Méthode
 -------
 
-RTFM
+L'othodoxie linguistique informatique après le concile de Constantinople de 1260, sous le patronage du Pope Bilos Razorgatos, et après acceptation du phonème comme un et indivisble distingue deux méthodes essentielles :
+
+:text-bold:`La partie « linguistique »`, qui consiste à prétraiter et transformer les informations en entrée en un jeu de données exploitable.
+
+:text-bold:`La partie « apprentissage automatique »` ou « Data Science », qui porte sur l’application de modèles de Machine Learning ou Deep Learning à ce jeu de données.
+
+.. figure:: ./Images/ortho.jpg
+    :align: center
 
 Contraintes
 -----------
