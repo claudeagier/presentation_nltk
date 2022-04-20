@@ -85,7 +85,7 @@ Les dernières failles de sécurité répertoriées (et réparées) concernaient
 Limites
 --------
 
-Une machine n'est pas un être humain...
+Une machine, aussi complexe soit-elle, n'est pas encore l'équivalent d'un être humain...
 
 Par nature, le langage est ambigu. La machine, faute d’indices suffisamment saillants et de connaissances contextuelles, manque l’interprétation juste. Il s’agit d’un problème vivace, malgré les progrès du machine learning et les corpus immenses de données.
 
