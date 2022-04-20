@@ -27,9 +27,9 @@ Analyse sémantique
 ------------------
 L’analyse sémantique consiste ainsi à établir la signification d’une phrase en utilisant le sens des éléments la composant. Dans la NLP, elle s'appuie sur les éléments suivants :
 
-- l’approche linguistique, avec l'établissement a priori des règles en étudiant le langage
-- l’approche statistique, avec pour base l’analyse de corpus importants, à partir desquels la machine va extraire des règles grâce à l’apprentissage automatique (machine learning);
-- les approches hybrides, situées entre linguistique et statistique qui permettent d’obtenir de meilleurs résultats.
+- :text-bold:`l’approche linguistique`, avec l'établissement a priori des règles en étudiant le langage
+- :text-bold:`l’approche statistique`, avec pour base l’analyse de corpus importants, à partir desquels la machine va extraire des règles grâce à l’apprentissage automatique (machine learning);
+- :text-bold:`les approches hybrides`, situées entre linguistique et statistique qui permettent d’obtenir de meilleurs résultats.
 
 Analyse lexicale
 ----------------
