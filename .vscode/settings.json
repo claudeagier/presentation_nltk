@@ -1,4 +1,13 @@
 {
     "makefile.extensionOutputFolder": "./.vscode",
-    "esbonio.sphinx.confDir": ""
+    "esbonio.sphinx.confDir": "",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Connect",
+            "database": "C:\\Users\\Cefim\\OneDrive\\Bureau\\Scraping 2\\Jour 1\\allocine.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
 }
