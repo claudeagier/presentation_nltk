@@ -33,7 +33,7 @@ L’analyse sémantique consiste ainsi à établir la signification d’une phra
 
 Analyse lexicale
 ----------------
-L'analyse lexicale est fondée sur la statistique fréquentielle, c'est-à-dire la redondande des traces lexicales et les proximités entre les mots.
+L'analyse lexicale est fondée sur la statistique fréquentielle, c'est-à-dire la redondante des traces lexicales et les proximités entre les mots.
 
 Un peu de Vocabulaire NLP :
 ===========================
@@ -74,12 +74,12 @@ Cette méthode consiste à analyser la nature sémantique des mots d'un texte : 
 
 Chunking
 ---------
-Chunk = morceau. Rassembler des éléments de langages individuels en plus gros groupes (verbaux, nominaux, complèments divers etc.).
+Chunk = morceau. Rassembler des éléments de langages individuels en plus gros groupes (verbaux, nominaux, compléments divers etc.).
 
 N.E.R. : Name Entity Recognition 
 --------------------------------
 
-Vient en complémentarité de la tokenization d'une texte pour identifier des catégories de noms : entreprises, locations, gopolitiques, organisations, personnes, géo-sociologiques). Se fait également à l'aide de la méthode de chunking.
+Vient en complémentarité de la tokenization d'une texte pour identifier des catégories de noms : entreprises, locations, géopolitiques, organisations, personnes, géo-sociologiques). Se fait également à l'aide de la méthode de chunking.
 
 Parsing
 --------
@@ -87,7 +87,7 @@ Méthode utilisée pour passer en revue tous les éléments d'un texte afin d'en
 
 Arbre syntaxique
 -----------------
-Il représente la structure syntaxique d'une phrase. Dans la bibliothèque NLTK, l'arbre donne une représentation visuelle de l'organisation syntaxique de la phrase, basée sur le travail de tagging . Chaque rameau est relié à une branche par un "node" (noeud), elle même reliée au tronc qui représente la phrase dans son ensemble.
+Il représente la structure syntaxique d'une phrase. Dans la bibliothèque NLTK, l'arbre donne une représentation visuelle de l'organisation syntaxique de la phrase, basée sur le travail de tagging . Chaque rameau est relié à une branche par un "node" (nœud), elle-même reliée au tronc qui représente la phrase dans son ensemble.
 
 .. figure:: ./Images/syntax_tree.png
 

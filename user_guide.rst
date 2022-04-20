@@ -63,7 +63,7 @@ Principes
 Méthode
 -------
 
-L'othodoxie linguistique informatique après le concile de Constantinople de 1260, sous le patronage du Pope Bilos Razorgatos, et après acceptation du phonème comme un et indivisble distingue deux méthodes essentielles :
+L'orthodoxie linguistique informatique après le concile de Constantinople de 1260, sous le patronage du Pope Bilos Razorgatos, et après acceptation du phonème comme un et indivisible distingue deux méthodes essentielles :
 
 :text-bold:`La partie « linguistique »`, qui consiste à prétraiter et transformer les informations en entrée en un jeu de données exploitable.
 
@@ -80,7 +80,7 @@ NLTK fonctionne avec Python version 2 & 3
 Technologies
 ------------
 NLTK possède un ensemble de sous-packages et sous-modules pour la visualisation et l'intégration d'API (notamment des API en liens avec les réseaux sociaux)
-Les dernières failles de sécurité repertoriées (et réparées) concernaient de possibles attaques ReDoS (Regular Expression Deniol of Service).
+Les dernières failles de sécurité répertoriées (et réparées) concernaient de possibles attaques ReDoS (Regular Expression Denial of Service).
 
 Limites
 --------
