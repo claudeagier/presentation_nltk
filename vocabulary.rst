@@ -1,11 +1,10 @@
+Un peu de Vocabulaire linguistique :
+=====================================
+
 
 .. role:: text-bold
 .. figure:: ./Images/voc.jpg 
     :align: center 
-
-Un peu de Vocabulaire
-=====================
-
 
 .. NOTE::
     Nous allons bien sûr rester ici dans le domaine du vocabulaire propre à la bibliothèque et ne pas nous attarder sur des notions de linguistique qui s'avéreraient par trop complexes.
@@ -35,6 +34,9 @@ L’analyse sémantique consiste ainsi à établir la signification d’une phra
 Analyse lexicale
 ----------------
 L'analyse lexicale est fondée sur la statistique fréquentielle, c'est-à-dire la redondande des traces lexicales et les proximités entre les mots.
+
+Un peu de Vocabulaire NLP :
+===========================
 
 Tokenization
 ------------
