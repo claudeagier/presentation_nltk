@@ -9,12 +9,12 @@ NLTK : Natural Language Tool Kit
 Qui ?
 -----------------
 
-:text-bold:`Steven Bird` a étudié l'ingénierie informatique à l'Université de Melbourne et réalisé une thèse en linguistique informatique à l'Université d'Edinburgh. Il a aussi étudié, sur le terrain, les langues d'Afrique de l'Ouest, d'Amérique du Sud, d'Asie Centrale, Mélanésie et Australie.
+**Steven Bird** a étudié l'ingénierie informatique à l'Université de Melbourne et réalisé une thèse en linguistique informatique à l'Université d'Edinburgh. Il a aussi étudié, sur le terrain, les langues d'Afrique de l'Ouest, d'Amérique du Sud, d'Asie Centrale, Mélanésie et Australie.
 
-:text-bold:`Edward Loper` est actuellement dans la recherche scientifique chez BBN Technologies (aerospatiale).
+**Edward Loper** est actuellement dans la recherche scientifique chez BBN Technologies (aerospatiale).
 Il a une thèse en Computer Science. Ses recherches actuelles portent sur la linguistique informatique et le machine learning. C'est lui le designer à l'origine de NLTK, mais aussi d'epydoc.
 
-:text-bold:`Ewan Klein` est chercheur dans divers domaines : linguistique théorique, phonologie informatique, syntaxe et sémantique, dialogue parlé avec des machines, text mining dans les domaines de la biologie médicale et de l'histoire digitale, l'utilisation des différentes formes de données dans des contextes de recherches, et le I.O.T.
+**Ewan Klein** est chercheur dans divers domaines : linguistique théorique, phonologie informatique, syntaxe et sémantique, dialogue parlé avec des machines, text mining dans les domaines de la biologie médicale et de l'histoire digitale, l'utilisation des différentes formes de données dans des contextes de recherches, et le I.O.T.
 
 
 Création
@@ -33,7 +33,7 @@ Stats, machine learning, IA, sciences cognitives, linguistique, études sémanti
 
     Bien que couvrant plusieurs langues - dont le français, NLTK est avant tout une bibliothèque anglophone.
 
-:text-bold:`Et plus concrètement, dans la vie de tous les jours`
+:text-bold:`Et plus concrètement, dans la vie de tous les jours ?`
 
 - traduction de texte (DeepL par exemple)
 - correcteur orthographique
@@ -54,13 +54,13 @@ D'après les auteurs : (Introduction du livre *Natural Language Programming with
 
 "NLTK a été conçue avec 4 objectifs : 
 
-- :text-bold:`Simplicité` : créer un framework avec des blocs substantiels et faciles à utiliser, donnant aux utilisateurs des outils pratiques pour le NLP. Ceci afin d'éviter les exercices fastidieux de maintenance dans un océan de données sémantiques.
+- **Simplicité** : créer un framework avec des blocs substantiels et faciles à utiliser, donnant aux utilisateurs des outils pratiques pour le NLP. Ceci afin d'éviter les exercices fastidieux de maintenance dans un océan de données sémantiques.
 
-- :text-bold:`Uniformité` : un framework uniformisé, avec une interface cohérente, des structures de données, le tout avec des méthodes aux noms parlants.
+- **Uniformité** : un framework uniformisé, avec une interface cohérente, des structures de données, le tout avec des méthodes aux noms parlants.
 
-- :text-bold:`Elasticité` : donner une structure dans laquelle il est facile d'implémenter de nouveaux modules qui s'intégreraient aisément : alternatives comme concurrents.
+- **Elasticité** : donner une structure dans laquelle il est facile d'implémenter de nouveaux modules qui s'intégreraient aisément : alternatives comme concurrents.
 
-- :text-bold:`Modularité` : donner des blocs, des éléments, des composants uniques qui peuvent s'utiliser sans devoir comprendre l'ensemble de la bibliothèque."
+- **Modularité** : donner des blocs, des éléments, des composants uniques qui peuvent s'utiliser sans devoir comprendre l'ensemble de la bibliothèque."
 
 
 
