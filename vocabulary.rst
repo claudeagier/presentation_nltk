@@ -60,15 +60,15 @@ Ce théorème donne surtout de très bon résultats pour la classification. Ceci
 
 
 Vocabulaire NLTK 
----------------------------
+-----------------
 
 Corpus 
-~~~~~~~~~~~~~~
+~~~~~~
 
 Le package nltk.corpus est un ensemble de classes qui permettent de lire un corpus. Classes qui peuvent être utilisées pour accéder aux contenus d'un ensemble de corpora variés. La liste complète de ces corpora est donnée ici : https://www.nltk.org/nltk_data/
 
 Wordnet
-~~~~~~~~~~~~~~
+~~~~~~~
 WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l'université de Princeton depuis une vingtaine d'années3. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d'autres langues existent, mais la version anglaise est cependant la plus complète à ce jour [#]_ 
 Elle est intéégrée au sein de la bibliothèque NLTK
 
@@ -77,11 +77,11 @@ Tokenization
 Il s'agit de découper le texte en "tokens", le token étant une unité sémantique individuelle avec un sens grammatical. En tokenizant, si un mot apparaît plusieurs fois dans le texte, il sera compté plusieurs fois.
 
 Stop-word
-~~~~~~~~~~~~~~
+~~~~~~~~~
 Ce sont les mots qui sont généralement filtrés avant de traiter un texte. Ils regroupent les mots les plus communs d'un langage (articles, prépositions, pronoms, conjonctions, etc.) qui n'apportent pas beaucoup d'information quant au sens du texte.
 
 Stemming
-~~~~~~~~~~~~~~
+~~~~~~~~
 Un même mot peut se retrouver sous différentes formes en fonction du genre (masculin féminin), du nombre (singulier, pluriel), de la personne (moi, toi, eux…) etc. Le stemming désigne généralement le processus qui consiste à découper la fin des mots afin de n'en conserver que la racine.
 
 Lemmatisation
