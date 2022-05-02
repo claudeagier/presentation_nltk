@@ -12,13 +12,15 @@ Vocabulaire
 Considérations linguistiques et probabilistes 
 ----------------------------------------------
 
+Langage
+~~~~~~~~~~~~~~
+Au sens large, le langage se définit comme un système de signes qui associe des mots selon des règles grammaticales précises. Le langage renvoit à la faculté de raisonner, de nommer les choses et de communiquer avec autrui.
+
+
 Linguistique 
 ~~~~~~~~~~~~~~
 Science qui a la langue pour objet. 
 
-Langage
-~~~~~~~~~~~~~~
-Au sens large, le langage se définit comme un système de signes qui associe des mots selon des règles grammaticales précises. Le langage renvoit à la faculté de raisonner, de nommer les choses et de communiquer avec autrui.
 
 .. NOTE::
     Au passage, ceci est un mythe, merci de l'oublier pour de bon.
