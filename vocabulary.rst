@@ -1,5 +1,5 @@
-Un peu de Vocabulaire linguistique :
-=====================================
+Considérations linguistiques et probabilistes :
+===============================================
 
 
 .. role:: text-bold
@@ -7,7 +7,10 @@ Un peu de Vocabulaire linguistique :
     :align: center 
 
 .. NOTE::
-    Nous allons bien sûr rester ici dans le domaine du vocabulaire propre à la bibliothèque et ne pas nous attarder sur des notions de linguistique qui s'avéreraient par trop complexes.
+    Nous allons bien sûr rester ici dans le domaine du vocabulaire propre à la bibliothèque et ne pas nous attarder sur des notions de linguistique qui s'avéreraient trop complexes.
+Linguistique :
+--------------
+Science qui a la langue pour objet. 
 
 Langage
 -------
@@ -35,8 +38,23 @@ Analyse lexicale
 ----------------
 L'analyse lexicale est fondée sur la statistique fréquentielle, c'est-à-dire la redondance des traces lexicales et les proximités entre les mots.
 
-Un peu de Vocabulaire NLP :
+Naive Bayes Classifier :
+------------------------
+C'est un peu l'esprit du fonctionnement de la bibliothèque NLTK.
+Le naive Bayes classifier se base sur le théorème de Bayes. Ce dernier est un classique de la théorie des probabilités. Ce théorème est fondé sur les probabilités conditionnelles.
+:text-bold:`Probabilité conditionnelle` : quelle est la probabilité qu’un événement se produise sachant qu’un autre événement s’est déjà produit.
+Le terme “naïve” vient du fait qu’on suppose l'indépendance des variables.
+Ce théorème donne surtout de très bon résultats pour la classification. Ceci est paradoxal car on suppose une indépendance forte entre les différentes conditions.
+
+
+Un peu de vocabulaire NLP :
 ===========================
+
+
+Wordnet
+--------
+WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l'université de Princeton depuis une vingtaine d'années3. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d'autres langues existent, mais la version anglaise est cependant la plus complète à ce jour [#]_ 
+Elle est intéégrée au sein de la bibliothèque NLTK
 
 Tokenization
 ------------
@@ -52,7 +70,8 @@ Un même mot peut se retrouver sous différentes formes en fonction du genre (ma
 
 Lemmatisation
 -------------
-Cela consiste à réaliser la même tâche mais en utilisant une analyse et un vocabulaire fins de la construction des mots. La lemmatisation permet donc de supprimer uniquement les terminaisons inflexibles en isolant la forme canonique du mot, connue sous le nom de lemme.
+Cela consiste à réaliser la même tâche mais en utilisant une analyse et un vocabulaire plus fins de la construction des mots. La lemmatisation permet donc de supprimer uniquement les terminaisons inflexibles en isolant la forme canonique du mot, connue sous le nom de lemme.
+Il existe plusieurs types de lemmatisation : Porter et Lancaster qui sont basées sur des algorithmes différents, et une troisième basée sur le dictionnaire Wordnet.
 
 Term-Frequency (TF)
 -------------------
@@ -97,3 +116,4 @@ Il représente la structure syntaxique d'une phrase. Dans la bibliothèque NLTK,
     Plus le vocabulaire du corpus est riche, plus la taille des vecteurs est grande, ce qui peut représenter un problème pour les modèles d’apprentissage.
     Le comptage d’occurrences de mots ne permet pas de rendre compte de leur agencement et donc du sens des phrases.
 
+.. [#] *Source* : https://fr.wikipedia.org/wiki/WordNet

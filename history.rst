@@ -69,7 +69,7 @@ A cela, les auteurs ajoutent trois aspects qu'ils ont délibérément "omis" de 
 
 "D'abord, NLTK est une boîte à outils, pas une encyclopédie exhaustive ou un système destiné au NLP [...], ensuite, NLTK est une boîte à outils suffisamment élaborée pour remplir de nombreuses analyses et tâches sans pour autant être optimisée en termes de performances matérielles. Nous avons choisi la commodité d'utilisation et de programmation. [...] Enfin, nous avons évité une programmation trop poussive puisque nous croyons plutôt en la logique et l'ingéniosité, plutôt qu'en d'indéchiffrables salmigondis algorithmiques."
 
-
+Enfin, on notera que le NLP se transforme en Natural Language Understanding (NLU) lorsqu'on lui applique des méthodes de machine learning.
 
 Les principaux concurrents 
 --------------------------

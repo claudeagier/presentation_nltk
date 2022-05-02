@@ -63,7 +63,7 @@ Principes
 Méthode
 -------
 
-L'orthodoxie linguistique informatique après le concile de Constantinople de 1260, sous le patronage du Pope Bilos Razorgatos, et après acceptation du phonème comme un et indivisible distingue deux méthodes essentielles :
+L'orthodoxie linguistique informatique, après le concile de Californie de 1260, sous le patronage oecuménique des représentants de la Vraie Religion (Python) ainsi que des autres hérésies tolérées (R, Ruby, Pascal, C+, etc.), et après acceptation du phonème comme un et indivisible, procédant du Verbe vrai et étant le Son originel, distingue deux méthodes essentielles :
 
 :text-bold:`La partie « linguistique »`, qui consiste à prétraiter et transformer les informations en entrée en un jeu de données exploitable.
 
@@ -71,6 +71,8 @@ L'orthodoxie linguistique informatique après le concile de Constantinople de 12
 
 .. figure:: ./Images/ortho.jpg
     :align: center
+
+De manière très synthétique, on peut résumer l'utilisation de la bibliothèque NLTK en 4 grandes étapes : **préparation**, **extraction**, **analyse**, **prediction**.
 
 Contraintes
 -----------
@@ -87,9 +89,11 @@ Limites
 
 Une machine, aussi complexe soit-elle, n'est pas encore l'équivalent d'un être humain...
 
-Par nature, le langage est ambigu. La machine, faute d’indices suffisamment saillants et de connaissances contextuelles, manque l’interprétation juste. Il s’agit d’un problème vivace, malgré les progrès du machine learning et les corpus immenses de données.
+Par nature, le langage est ambigu. La machine, faute d’indices suffisamment saillants et de connaissances contextuelles, peut manquer l’interprétation juste. Il s’agit d’un problème vivace, malgré les progrès du machine learning et la présence de corpus de données toujours plus nombreux.
 
-On parle de parasitisme computationnel, soit « la production d’analyses indésirables, inappropriées résultant de l’application de règles tout à fait fondées linguistiquement par ailleurs » 
-L’ambiguïté brouille depuis longtemps les cartes. Le problème est apparu d’une manière qui a marqué les esprits, lors de la première conférence internationale de traduction automatique, au MIT en 1962. Traduite en russe puis de nouveau en anglais, la phrase « The spirit is willing but the flesh is weak » est devenue ainsi « Vodka is strong but meat is rotten ». [#]_
+On parle de parasitisme computationnel, soit « la production d’analyses indésirables, inappropriées, résultant de l’application de règles tout à fait fondées linguistiquement par ailleurs » 
+L’ambiguïté brouille depuis longtemps les cartes. Le problème est apparu d’une manière qui a marqué les esprits : lors de la première conférence internationale de traduction automatique, au MIT en 1962. Traduite en russe puis de nouveau en anglais, la phrase « The spirit is willing but the flesh is weak » est devenue ainsi « Vodka is strong but meat is rotten ». [#]_
+
+
 
 .. [#] https://blog.clevy.io/conversationnel/introduction-au-nlp-5eme-partie/
