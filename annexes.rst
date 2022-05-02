@@ -9,10 +9,9 @@ Ressources
 
 Quelques sites
 ~~~~~~~~~~~~~~~
+https://www.nltk.org/
 
 https://www.stat4decision.com/fr/traitement-langage-naturel-francais-tal-nlp/
-
-https://www.nltk.org/
 
 https://datascientest.com/introduction-au-nlp-natural-language-processing
 
