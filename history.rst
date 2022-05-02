@@ -4,7 +4,8 @@
 Un peu d'histoire
 ================================
 
-NLTK : Natural Language Tool Kit
+.. figure:: ./Images/nltk.jpg
+    :align: center 
 
 Qui ?
 -----------------
@@ -67,22 +68,23 @@ D'après les auteurs : (Introduction du livre *Natural Language Programming with
 A cela, les auteurs ajoutent trois aspects qu'ils ont délibérément "omis" de traiter en créant cette bibliothèque :
 
 
-"D'abord, NLTK est une boîte à outils, pas une encyclopédie exhaustive ou un système destiné au NLP [...], ensuite, NLTK est une boîte à outils suffisamment élaborée pour remplir de nombreuses analyses et tâches sans pour autant être optimisée en termes de performances matérielles. Nous avons choisi la commodité d'utilisation et de programmation. [...] Enfin, nous avons évité une programmation trop poussive puisque nous croyons plutôt en la logique et l'ingéniosité, plutôt qu'en d'indéchiffrables salmigondis algorithmiques."
+"D'abord, NLTK est une boîte à outils, pas une encyclopédie exhaustive ou un système destiné au NLP [...], ensuite, NLTK est une boîte à outils suffisamment élaborée pour remplir de nombreuses analyses et tâches sans pour autant être optimisée en termes de performances matérielles. Nous avons choisi la commodité d'utilisation et de programmation. [...] Enfin, nous avons évité une programmation trop poussive puisque nous croyons en la logique et l'ingéniosité, plutôt qu'en d'indéchiffrables salmigondis algorithmiques."
 
-Enfin, on notera que le NLP se transforme en Natural Language Understanding (NLU) lorsqu'on lui applique des méthodes de machine learning.
+.. note::
+On notera que le NLP se transforme en Natural Language Understanding (NLU) lorsqu'on lui applique des méthodes de machine learning.
 
 Les principaux concurrents 
 --------------------------
 
+* spaCy(Python)
+* TextBlob(Python)
 * openNLP (Apache)
 * Stanford CoreNLP (Python)
 * Amazon Comprehend (API Amazon)
 * Google Cloud Natural Language (API)
 * FuzzyWuzzy(Python)
-* spaCy(Python)
 * Watson Tone Analyzer (IBM)
-* TextBlob(Python)
-
+* Elon Musk ?
 
 La communauté
 --------------

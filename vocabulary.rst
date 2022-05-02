@@ -49,14 +49,13 @@ Naive Bayes Classifier
 C'est un peu l'esprit du fonctionnement de la bibliothèque NLTK.
 Le naive Bayes classifier se base sur le théorème de Bayes. Ce dernier est un classique de la théorie des probabilités. Ce théorème est fondé sur les probabilités conditionnelles.
 
-**Probabilité conditionnelle** : quelle est la probabilité qu’un événement se produise sachant qu’un autre événement s’est déjà produit.
+**Probabilité conditionnelle** : quelle est la probabilité qu’un événement se produise sachant qu’un autre événement s’est déjà produit ?
 
 Le terme “naive” vient du fait qu’on suppose l'indépendance des variables.
 Ce théorème donne surtout de très bon résultats pour la classification. Ceci est paradoxal car on suppose une indépendance forte entre les différentes conditions.
 
 .. figure:: ./Images/wat.jpg
     :align: center 
-
 
 
 Vocabulaire NLTK 
