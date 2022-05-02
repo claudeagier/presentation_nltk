@@ -9,10 +9,10 @@ Vocabulaire
 .. NOTE::
     Nous allons bien sûr rester ici dans le domaine du vocabulaire propre à la bibliothèque et ne pas nous attarder sur des notions de linguistique qui s'avéreraient trop complexes.
 
-Considérations linguistiques et probabilistes :
+Considérations linguistiques et probabilistes 
 ----------------------------------------------
 
-Linguistique :
+Linguistique 
 ~~~~~~~~~~~~~~
 Science qui a la langue pour objet. 
 
@@ -31,33 +31,39 @@ Sens
 En linguistique, le sens est la signification d'une expression (mot, syntagme, phrase, énoncé, etc.), c'est-à-dire l'idée qui y est associée, dite aussi dénotation, avec ou sans connotations. Les interrogations au sujet de ce que constitue la signification, ou le sens, sont à la base de la philosophie du langage.
 
 Analyse sémantique
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 L’analyse sémantique consiste à établir la signification d’une phrase en utilisant le sens des éléments la composant. Dans la NLP, elle s'appuie sur les éléments suivants :
 
 - **l’approche linguistique**, avec l'établissement a priori des règles en étudiant le langage ;
 - **l’approche statistique**, avec pour base l’analyse de corpus importants, à partir desquels la machine va extraire des règles grâce à l’apprentissage automatique (machine learning) ;
-- **les approches hybrides**`**, situées entre linguistique et statistique qui permettent d’obtenir de meilleurs résultats.
+- **les approches hybrides**, situées entre linguistique et statistique qui permettent d’obtenir de meilleurs résultats.
 
 Analyse lexicale
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 L'analyse lexicale est fondée sur la statistique fréquentielle, c'est-à-dire la redondance des traces lexicales et les proximités entre les mots.
 
-Naive Bayes Classifier :
+Naive Bayes Classifier 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 C'est un peu l'esprit du fonctionnement de la bibliothèque NLTK.
 Le naive Bayes classifier se base sur le théorème de Bayes. Ce dernier est un classique de la théorie des probabilités. Ce théorème est fondé sur les probabilités conditionnelles.
+
 **Probabilité conditionnelle** : quelle est la probabilité qu’un événement se produise sachant qu’un autre événement s’est déjà produit.
-Le terme “naïve” vient du fait qu’on suppose l'indépendance des variables.
+
+Le terme “naive” vient du fait qu’on suppose l'indépendance des variables.
 Ce théorème donne surtout de très bon résultats pour la classification. Ceci est paradoxal car on suppose une indépendance forte entre les différentes conditions.
 
+.. figure:: ./Images/wat.jpg
+    :align: center 
 
-Un peu de vocabulaire NLP :
+
+
+Vocabulaire NLTK 
 ---------------------------
 
-Corpus :
+Corpus 
 ~~~~~~~~~~~~~~
 
-Il y a 
+Le package nltk.corpus est un ensemble de classes qui permettent de lire un corpus. Classes qui peuvent être utilisées pour accéder aux contenus d'un ensemble de corpora variés. La liste complète de ces corpora est donnée ici : https://www.nltk.org/nltk_data/
 
 Wordnet
 ~~~~~~~~~~~~~~
@@ -117,7 +123,7 @@ Arbre syntaxique
 Il représente la structure syntaxique d'une phrase. Dans la bibliothèque NLTK, l'arbre donne une représentation visuelle de l'organisation syntaxique de la phrase, basée sur le travail de tagging . Chaque rameau est relié à une branche par un "node" (nœud), elle-même reliée au tronc qui représente la phrase dans son ensemble.
 
 .. figure:: ./Images/syntax_tree.png
-
+    :align: center 
 
 .. WARNING::
 
