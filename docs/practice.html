@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NLTK dans la pratique &mdash; Documentation presentation_ntlk 0.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Annexes" href="annexes.html" />
+    <link rel="prev" title="Comment ça marche" href="user_guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> presentation_ntlk
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table des matières :</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="history.html">Un peu d’histoire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vocabulary.html">Vocabulaire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">Comment ça marche</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">NLTK dans la pratique</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#demonstration">Démonstration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#import-des-bibliotheques">Import des bibliothèques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chargement-du-fichier-json">Chargement du fichier json</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mise-en-place-des-filtres-a-utiliser-pour-preparer-les-donnees">Mise en place des filtres à utiliser pour préparer les données</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instanciation-des-utilitaires-francais">Instanciation des utilitaires français</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#analyse-des-tweets">Analyse des tweets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-tagger-pour-la-langue-francaise">Installation tagger pour la langue française</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#a-vous-de-jouer">À  vous de jouer !</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="annexes.html">Annexes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">presentation_ntlk</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>NLTK dans la pratique</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/practice.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="nltk-dans-la-pratique">
+<h1>NLTK dans la pratique<a class="headerlink" href="#nltk-dans-la-pratique" title="Lien permanent vers ce titre"></a></h1>
+<figure class="align-center">
+<img alt="_images/idea.png" src="_images/idea.png" />
+</figure>
+<section id="demonstration">
+<h2>Démonstration<a class="headerlink" href="#demonstration" title="Lien permanent vers ce titre"></a></h2>
+<p>Analyse de tweets sur le thème de l’élection présidentielle.
+Pour cette démonstration, nous verrons comment utiliser nltk pour analyser des données textuelles en francais.
+Cette bibliothèque n’est pas très adapté à la langue française, il faut faire quelques recherches pour pouvoir utiliser correctement la librarie en langue française.</p>
+<p>La première étape de cette démonstration a été de récupérer des tweets via l’API twitter.
+Le dataset est constitué d’environ 600 tweets anonymisés.</p>
+<section id="import-des-bibliotheques">
+<h3>Import des bibliothèques<a class="headerlink" href="#import-des-bibliotheques" title="Lien permanent vers ce titre"></a></h3>
+<p><span class="text-bold">Installation des packages</span></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+
+<span class="c1"># fonctions, classes et méthodes pour l&#39;analyse du francais</span>
+<span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">RegexpTokenizer</span>
+<span class="kn">from</span> <span class="nn">nltk.stem.snowball</span> <span class="kn">import</span> <span class="n">FrenchStemmer</span>
+
+<span class="c1"># from nltk.tokenize import sent_tokenize</span>
+<span class="kn">from</span> <span class="nn">nltk.probability</span> <span class="kn">import</span> <span class="n">FreqDist</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</section>
+<section id="chargement-du-fichier-json">
+<h3>Chargement du fichier json<a class="headerlink" href="#chargement-du-fichier-json" title="Lien permanent vers ce titre"></a></h3>
+<p><span class="text-bold">Création du dataframe</span></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tweets</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s2">&quot;test_tweets.json&quot;</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s2">&quot;records&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<span class="n">tweets</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">tweets</span> <span class="o">=</span> <span class="n">tweets</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tweets</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+<section id="mise-en-place-des-filtres-a-utiliser-pour-preparer-les-donnees">
+<h3>Mise en place des filtres à utiliser pour préparer les données<a class="headerlink" href="#mise-en-place-des-filtres-a-utiliser-pour-preparer-les-donnees" title="Lien permanent vers ce titre"></a></h3>
+<p><span class="text-bold">Chargement du dictionnaire de stop words</span></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># dictionnaire de mots stop en francais</span>
+<span class="n">french_stopwords</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;french&#39;</span><span class="p">))</span>
+
+<span class="c1"># add stop words</span>
+<span class="n">french_stopwords</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;cette&#39;</span><span class="p">)</span>
+<span class="n">french_stopwords</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;où&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><span class="text-bold">Fonction de filtrage des mots</span></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># filtrer tous les caractères spéciaux</span>
+<span class="n">regexp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;[\.\!\&quot;\s\?\-\,\&#39;\_\@\…\/\#\:\’]+&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">wanted</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">regexp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="ow">or</span> <span class="n">word</span> <span class="o">==</span> <span class="s2">&quot;https&quot;</span>
+
+<span class="c1">#filtrer les stop word</span>
+<span class="n">filtre_stopfr</span> <span class="o">=</span>  <span class="k">lambda</span> <span class="n">text</span><span class="p">:</span> <span class="p">[</span><span class="n">token</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">text</span> <span class="k">if</span> <span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">french_stopwords</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="instanciation-des-utilitaires-francais">
+<h3>Instanciation des utilitaires français<a class="headerlink" href="#instanciation-des-utilitaires-francais" title="Lien permanent vers ce titre"></a></h3>
+<p><span class="text-bold">Instanciation du tokenizer</span></p>
+<p>Il est recommander de faire un tokenizer custom avec une regexp pour gérer au mieux le tronçonnage des phrases en mots</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># french tokenizer</span>
+<span class="c1"># from nltk import RegexpTokenizer</span>
+<span class="n">toknizer</span> <span class="o">=</span> <span class="n">RegexpTokenizer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&#39;&#39;\w&#39;|\w+|[^\w\s]&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><span class="text-bold">Instanciation de stemmer</span></p>
+<p>Il faut utiliser une classe spécifique à la langue francaise pour la recherche du radical du mot. Il existe différents stemmer pour chaque langue</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># french stemmer</span>
+<span class="c1"># from nltk.stem.snowball import FrenchStemmer</span>
+<span class="n">fs</span> <span class="o">=</span> <span class="n">FrenchStemmer</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><span class="text-bold">Instancier c’est bien, s’en servir c’est mieux</span></p>
+<p>Pour ce faire, je fais quelques fonctions</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># tokenization de tous les mots</span>
+<span class="k">def</span> <span class="nf">get_text_tokenized</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">tokens</span> <span class="o">=</span> <span class="n">toknizer</span><span class="o">.</span><span class="n">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">filtre_stopfr</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
+
+<span class="c1"># stemmatisation des mots (racine)</span>
+<span class="k">def</span> <span class="nf">get_stem</span><span class="p">(</span><span class="n">tokenized_text</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">fs</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span> <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">tokenized_text</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">wanted</span><span class="p">(</span><span class="n">tokens</span><span class="p">)]</span>
+
+<span class="c1"># token + stem + reconstruction de la phrase</span>
+<span class="k">def</span> <span class="nf">getcleantext</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">new_tokens</span> <span class="o">=</span> <span class="n">get_text_tokenized</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="n">stemmed_tokens</span> <span class="o">=</span> <span class="n">get_stem</span><span class="p">(</span><span class="n">new_tokens</span><span class="p">)</span>
+    <span class="n">clean_text</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">stemmed_tokens</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">clean_text</span>
+</pre></div>
+</div>
+</section>
+<section id="analyse-des-tweets">
+<h3>Analyse des tweets<a class="headerlink" href="#analyse-des-tweets" title="Lien permanent vers ce titre"></a></h3>
+<p><span class="text-bold">Fréquence de distribution des mots et top 10</span></p>
+<p>Mais que ce passe-t-il dans ce code ?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fd</span> <span class="o">=</span> <span class="n">FreqDist</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]:</span>
+    <span class="c1">#frequence distribution</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">get_text_tokenized</span><span class="p">(</span><span class="n">tweet</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">wanted</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+            <span class="n">fd</span><span class="p">[</span><span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span><span class="o">+=</span><span class="mi">1</span>
+
+<span class="c1"># for key, value in  enumerate(fd):</span>
+<span class="c1">#     print(f&quot;{key} : {value}&quot;)</span>
+
+<span class="n">fdist_top10</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">fdist_top10</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;présidentielle&#39;</span><span class="p">,</span> <span class="mi">323</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;macron&#39;</span><span class="p">,</span> <span class="mi">160</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;co&#39;</span><span class="p">,</span> <span class="mi">135</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;élection&#39;</span><span class="p">,</span> <span class="mi">127</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;zemmour&#39;</span><span class="p">,</span> <span class="mi">79</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;campagne&#39;</span><span class="p">,</span> <span class="mi">79</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;emmanuel&#39;</span><span class="p">,</span> <span class="mi">75</span><span class="p">)</span>
+ <span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="installation-tagger-pour-la-langue-francaise">
+<h3>Installation tagger pour la langue française<a class="headerlink" href="#installation-tagger-pour-la-langue-francaise" title="Lien permanent vers ce titre"></a></h3>
+<p><span class="text-bold">Installation tagger pour la langue française</span></p>
+<p>Après quelques recherches sur les internets, le meilleur tagger pour la langue francaise est un module java, développé par stanford.
+Il semble que le plus sûr moyen d’arriver à nos fins est de suivre la doc d’installation suivante:
+« <a class="reference external" href="http://www.linguisticsweb.org/doku.php?id=linguisticsweb:tutorials:automaticannotation:stanford_pos_tagger">http://www.linguisticsweb.org/doku.php?id=linguisticsweb:tutorials:automaticannotation:stanford_pos_tagger</a> »</p>
+<dl class="simple">
+<dt>Il faut donc utiliser un module java dans notre code python (oui , on peut)</dt><dd><ul class="simple">
+<li><p>installer jdk 8</p></li>
+<li><p>téléchager le .jar  Stanford Tagger version 4.2.x</p></li>
+<li><p>unzip</p></li>
+<li><p>copier le répertoire dézippé dans « C:/Users/Public/utility/ »</p></li>
+</ul>
+</dd>
+</dl>
+<p>Ensuite dans le code</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.tag.stanford</span> <span class="kn">import</span> <span class="n">StanfordPOSTagger</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1"># enter the path to your local Java JDK, under Windows, the path should look very similar to this example</span>
+<span class="n">java_path</span> <span class="o">=</span> <span class="s2">&quot;C:/Program Files/Java/jdk-18/bin/java.exe&quot;</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;JAVAHOME&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">java_path</span>
+
+<span class="c1"># enter the paths to the Stanford POS Tagger .jar file as well as to the model to be used</span>
+<span class="n">jar</span> <span class="o">=</span> <span class="s2">&quot;C:/Users/Public/utility/stanford-tagger-4.2.0/stanford-postagger-full-2020-11-17/stanford-postagger.jar&quot;</span>
+<span class="n">model</span> <span class="o">=</span> <span class="s2">&quot;C:/Users/Public/utility/stanford-tagger-4.2.0/stanford-postagger-full-2020-11-17/models/french-ud.tagger&quot;</span>
+
+<span class="c1"># instanciation</span>
+<span class="n">pos_tagger</span> <span class="o">=</span> <span class="n">StanfordPOSTagger</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">jar</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><span class="text-bold">Utilisation du tagger pour définir la nature des mots</span></p>
+<p>La liste des tags est ici : <a class="reference external" href="https://pythonprogramming.net/part-of-speech-tagging-nltk-tutorial/">https://pythonprogramming.net/part-of-speech-tagging-nltk-tutorial/</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Récupération des noms propres</span>
+<span class="n">all_names</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]:</span>
+    <span class="n">all_tags</span> <span class="o">=</span> <span class="n">pos_tagger</span><span class="o">.</span><span class="n">tag</span><span class="p">(</span><span class="n">get_text_tokenized</span><span class="p">(</span><span class="n">tweet</span><span class="p">))</span>
+    <span class="p">[</span><span class="n">all_names</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">tag</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">all_tags</span> <span class="k">if</span> <span class="n">tag</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;NOUN&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">all_names</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;retransmis&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ménages&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;entourage&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;gagnante&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;débat&#39;</span><span class="p">,</span>
+    <span class="o">...</span>
+    <span class="s1">&#39;président&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;appel&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;retraite&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Français&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;règles&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="a-vous-de-jouer">
+<h2>À  vous de jouer !<a class="headerlink" href="#a-vous-de-jouer" title="Lien permanent vers ce titre"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="user_guide.html" class="btn btn-neutral float-left" title="Comment ça marche" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="annexes.html" class="btn btn-neutral float-right" title="Annexes" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Claude Guillaume.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
