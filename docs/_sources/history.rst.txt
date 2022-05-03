@@ -6,7 +6,8 @@ Un peu d'histoire
 
 
 .. figure:: ./Images/papy.jpg
-    :align: center 
+    :align: center
+     
 
 Le NLP ou TAL, c'est quoi ça ?
 ------------------------------
