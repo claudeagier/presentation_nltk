@@ -10,9 +10,9 @@ NLTK dans la pratique
 Démonstration
 -------------
 
-Analyse de tweets sur le theme des élections présidentielle.
+Analyse de tweets sur le thème de l'élection présidentielle.
 Pour cette démonstration, nous verrons comment utiliser nltk pour analyser des données textuelles en francais.
-Cette bibliothèque n'est pas très adapté à la langue française, il faut faire quelques recherches pour pouvoir utiliser correctement la librarie en langue française
+Cette bibliothèque n'est pas très adapté à la langue française, il faut faire quelques recherches pour pouvoir utiliser correctement la librarie en langue française.
 
 La première étape de cette démonstration a été de récupérer des tweets via l'API twitter.
 Le dataset est constitué d'environ 600 tweets anonymisés.
@@ -86,35 +86,6 @@ Il faut utiliser une classe spécifique à la langue francaise pour la recherche
     # from nltk.stem.snowball import FrenchStemmer
     fs = FrenchStemmer()
 
-Installation tagger pour la langue française
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-:text-bold:`Installation tagger pour la langue française`
-
-Après quelques recherches sur les internets, le meilleur tagger pour la langue francaise est un module java, développé par stanford.
-Il semble que le plus sur moyen d'arriver à nos fins est de suivre la doc d'installation suivante:
-"http://www.linguisticsweb.org/doku.php?id=linguisticsweb:tutorials:automaticannotation:stanford_pos_tagger"
-
-IL faut donc utiliser un module java dans notre code python (oui , on peut)
- - installer jdk 8
- - téléchager le .jar  Stanford Tagger version 4.2.x 
- - unzip
- - copier le répertoire dézippé dans "C:/Users/Public/utility/"
-Ensuite dans le code
-::
-    from nltk.tag.stanford import StanfordPOSTagger
-    import os
-
-    # enter the path to your local Java JDK, under Windows, the path should look very similar to this example
-    java_path = "C:/Program Files/Java/jdk-18/bin/java.exe"
-    os.environ["JAVAHOME"] = java_path
-    
-    # enter the paths to the Stanford POS Tagger .jar file as well as to the model to be used
-    jar = "C:/Users/Public/utility/stanford-tagger-4.2.0/stanford-postagger-full-2020-11-17/stanford-postagger.jar"
-    model = "C:/Users/Public/utility/stanford-tagger-4.2.0/stanford-postagger-full-2020-11-17/models/english-bidirectional-distsim.tagger"
-    
-    # instanciation
-    pos_tagger = StanfordPOSTagger(model, jar, encoding = "utf-8")
 
 :text-bold:`Instancier c'est bien, s'en servir c'est mieux`
 
@@ -168,6 +139,36 @@ Output
        ('campagne', 79),
        ('emmanuel', 75)
     ]
+
+Installation tagger pour la langue française
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:text-bold:`Installation tagger pour la langue française`
+
+Après quelques recherches sur les internets, le meilleur tagger pour la langue francaise est un module java, développé par stanford.
+Il semble que le plus sûr moyen d'arriver à nos fins est de suivre la doc d'installation suivante:
+"http://www.linguisticsweb.org/doku.php?id=linguisticsweb:tutorials:automaticannotation:stanford_pos_tagger"
+
+Il faut donc utiliser un module java dans notre code python (oui , on peut)
+ - installer jdk 8
+ - téléchager le .jar  Stanford Tagger version 4.2.x 
+ - unzip
+ - copier le répertoire dézippé dans "C:/Users/Public/utility/"
+Ensuite dans le code
+::
+    from nltk.tag.stanford import StanfordPOSTagger
+    import os
+
+    # enter the path to your local Java JDK, under Windows, the path should look very similar to this example
+    java_path = "C:/Program Files/Java/jdk-18/bin/java.exe"
+    os.environ["JAVAHOME"] = java_path
+    
+    # enter the paths to the Stanford POS Tagger .jar file as well as to the model to be used
+    jar = "C:/Users/Public/utility/stanford-tagger-4.2.0/stanford-postagger-full-2020-11-17/stanford-postagger.jar"
+    model = "C:/Users/Public/utility/stanford-tagger-4.2.0/stanford-postagger-full-2020-11-17/models/french-ud.tagger"
+    
+    # instanciation
+    pos_tagger = StanfordPOSTagger(model, jar, encoding = "utf-8")
 
 :text-bold:`Utilisation du tagger pour définir la nature des mots`
 

@@ -68,8 +68,8 @@ Le package nltk.corpus est un ensemble de classes qui permettent de lire un corp
 
 Wordnet
 ~~~~~~~
-WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l'université de Princeton depuis une vingtaine d'années3. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d'autres langues existent, mais la version anglaise est cependant la plus complète à ce jour [#]_ 
-Elle est intéégrée au sein de la bibliothèque NLTK. 
+WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l'université de Princeton depuis une vingtaine d'années. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d'autres langues existent, mais la version anglaise est cependant la plus complète à ce jour [#]_ 
+Elle est intégrée au sein de la bibliothèque NLTK. 
 Wordnet permet aussi d'obtenir des synonymes ou encore des antonymes.
 
 Tokenization
