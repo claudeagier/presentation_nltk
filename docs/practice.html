@@ -52,10 +52,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#mise-en-place-des-filtres-a-utiliser-pour-preparer-les-donnees">Mise en place des filtres à utiliser pour préparer les données</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#instanciation-des-utilitaires-francais">Instanciation des utilitaires français</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#analyse-des-tweets">Analyse des tweets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#installation-tagger-pour-la-langue-francaise">Installation tagger pour la langue française</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-d-un-tagger-pour-la-langue-francaise">Installation d’un tagger pour la langue française</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#a-vous-de-jouer">À  vous de jouer !</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="annexes.html">Annexes</a></li>
@@ -95,9 +94,9 @@
 <section id="demonstration">
 <h2>Démonstration<a class="headerlink" href="#demonstration" title="Lien permanent vers ce titre"></a></h2>
 <p>Analyse de tweets sur le thème de l’élection présidentielle.
-Pour cette démonstration, nous verrons comment utiliser nltk pour analyser des données textuelles en francais.
-Cette bibliothèque n’est pas très adapté à la langue française, il faut faire quelques recherches pour pouvoir utiliser correctement la librarie en langue française.</p>
-<p>La première étape de cette démonstration a été de récupérer des tweets via l’API twitter.
+Pour cette démonstration, nous verrons comment utiliser NLTK pour analyser des données textuelles en français.
+Cette bibliothèque n’est pas très adaptée à la langue française : il faut donc faire quelques recherches pour pouvoir utiliser correctement cette librairie en français.</p>
+<p>La première étape de cette démonstration a été de récupérer des tweets via l’API Twitter.
 Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 <section id="import-des-bibliotheques">
 <h3>Import des bibliothèques<a class="headerlink" href="#import-des-bibliotheques" title="Lien permanent vers ce titre"></a></h3>
@@ -105,7 +104,7 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
 
-<span class="c1"># fonctions, classes et méthodes pour l&#39;analyse du francais</span>
+<span class="c1"># fonctions, classes et méthodes pour l&#39;analyse du français</span>
 <span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">RegexpTokenizer</span>
 <span class="kn">from</span> <span class="nn">nltk.stem.snowball</span> <span class="kn">import</span> <span class="n">FrenchStemmer</span>
 
@@ -128,11 +127,11 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 </section>
 <section id="mise-en-place-des-filtres-a-utiliser-pour-preparer-les-donnees">
 <h3>Mise en place des filtres à utiliser pour préparer les données<a class="headerlink" href="#mise-en-place-des-filtres-a-utiliser-pour-preparer-les-donnees" title="Lien permanent vers ce titre"></a></h3>
-<p><span class="text-bold">Chargement du dictionnaire de stop words</span></p>
+<p><span class="text-bold">Chargement du dictionnaire de stop-words</span></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># dictionnaire de mots stop en francais</span>
 <span class="n">french_stopwords</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;french&#39;</span><span class="p">))</span>
 
-<span class="c1"># add stop words</span>
+<span class="c1"># add stop-words</span>
 <span class="n">french_stopwords</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;cette&#39;</span><span class="p">)</span>
 <span class="n">french_stopwords</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;où&#39;</span><span class="p">)</span>
 </pre></div>
@@ -144,7 +143,7 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 <span class="k">def</span> <span class="nf">wanted</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">regexp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="ow">or</span> <span class="n">word</span> <span class="o">==</span> <span class="s2">&quot;https&quot;</span>
 
-<span class="c1">#filtrer les stop word</span>
+<span class="c1">#filtrer les stop-words</span>
 <span class="n">filtre_stopfr</span> <span class="o">=</span>  <span class="k">lambda</span> <span class="n">text</span><span class="p">:</span> <span class="p">[</span><span class="n">token</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">text</span> <span class="k">if</span> <span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">french_stopwords</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -152,21 +151,21 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 <section id="instanciation-des-utilitaires-francais">
 <h3>Instanciation des utilitaires français<a class="headerlink" href="#instanciation-des-utilitaires-francais" title="Lien permanent vers ce titre"></a></h3>
 <p><span class="text-bold">Instanciation du tokenizer</span></p>
-<p>Il est recommander de faire un tokenizer custom avec une regexp pour gérer au mieux le tronçonnage des phrases en mots</p>
+<p>Il est recommandé de faire un tokenizer custom avec une regexp pour gérer au mieux le tronçonnage des phrases en mots.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># french tokenizer</span>
 <span class="c1"># from nltk import RegexpTokenizer</span>
 <span class="n">toknizer</span> <span class="o">=</span> <span class="n">RegexpTokenizer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&#39;&#39;\w&#39;|\w+|[^\w\s]&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p><span class="text-bold">Instanciation de stemmer</span></p>
-<p>Il faut utiliser une classe spécifique à la langue francaise pour la recherche du radical du mot. Il existe différents stemmer pour chaque langue</p>
+<p>Il faut utiliser une classe spécifique à la langue française pour la recherche du radical du mot. Il existe différents stemmers pour chaque langue.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># french stemmer</span>
 <span class="c1"># from nltk.stem.snowball import FrenchStemmer</span>
 <span class="n">fs</span> <span class="o">=</span> <span class="n">FrenchStemmer</span><span class="p">()</span>
 </pre></div>
 </div>
 <p><span class="text-bold">Instancier c’est bien, s’en servir c’est mieux</span></p>
-<p>Pour ce faire, je fais quelques fonctions</p>
+<p>Pour ce faire, je crée quelques fonctions.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># tokenization de tous les mots</span>
 <span class="k">def</span> <span class="nf">get_text_tokenized</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="n">tokens</span> <span class="o">=</span> <span class="n">toknizer</span><span class="o">.</span><span class="n">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
@@ -188,7 +187,7 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 <section id="analyse-des-tweets">
 <h3>Analyse des tweets<a class="headerlink" href="#analyse-des-tweets" title="Lien permanent vers ce titre"></a></h3>
 <p><span class="text-bold">Fréquence de distribution des mots et top 10</span></p>
-<p>Mais que ce passe-t-il dans ce code ?</p>
+<p><strong>Mais que se passe-t-il dans ce code ?</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fd</span> <span class="o">=</span> <span class="n">FreqDist</span><span class="p">()</span>
 
 <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]:</span>
@@ -204,7 +203,7 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 <span class="n">fdist_top10</span>
 </pre></div>
 </div>
-<p>Output</p>
+<p><strong>Résultat</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
     <span class="p">(</span><span class="s1">&#39;présidentielle&#39;</span><span class="p">,</span> <span class="mi">323</span><span class="p">),</span>
     <span class="p">(</span><span class="s1">&#39;macron&#39;</span><span class="p">,</span> <span class="mi">160</span><span class="p">),</span>
@@ -217,22 +216,22 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 </pre></div>
 </div>
 </section>
-<section id="installation-tagger-pour-la-langue-francaise">
-<h3>Installation tagger pour la langue française<a class="headerlink" href="#installation-tagger-pour-la-langue-francaise" title="Lien permanent vers ce titre"></a></h3>
+<section id="installation-d-un-tagger-pour-la-langue-francaise">
+<h3>Installation d’un tagger pour la langue française<a class="headerlink" href="#installation-d-un-tagger-pour-la-langue-francaise" title="Lien permanent vers ce titre"></a></h3>
 <p><span class="text-bold">Installation tagger pour la langue française</span></p>
-<p>Après quelques recherches sur les internets, le meilleur tagger pour la langue francaise est un module java, développé par stanford.
+<p>Après quelques recherches sur les internets, le meilleur tagger pour la langue française est un module Java, développé par Stanford.
 Il semble que le plus sûr moyen d’arriver à nos fins est de suivre la doc d’installation suivante:
 « <a class="reference external" href="http://www.linguisticsweb.org/doku.php?id=linguisticsweb:tutorials:automaticannotation:stanford_pos_tagger">http://www.linguisticsweb.org/doku.php?id=linguisticsweb:tutorials:automaticannotation:stanford_pos_tagger</a> »</p>
 <dl class="simple">
-<dt>Il faut donc utiliser un module java dans notre code python (oui , on peut)</dt><dd><ul class="simple">
+<dt>Il faut donc utiliser un module Java dans notre code Python (oui, on peut) :</dt><dd><ul class="simple">
 <li><p>installer jdk 8</p></li>
 <li><p>téléchager le .jar  Stanford Tagger version 4.2.x</p></li>
-<li><p>unzip</p></li>
+<li><p>dézipper</p></li>
 <li><p>copier le répertoire dézippé dans « C:/Users/Public/utility/ »</p></li>
 </ul>
 </dd>
 </dl>
-<p>Ensuite dans le code</p>
+<p>Ensuite dans le code :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.tag.stanford</span> <span class="kn">import</span> <span class="n">StanfordPOSTagger</span>
 <span class="kn">import</span> <span class="nn">os</span>
 
@@ -275,9 +274,6 @@ Il semble que le plus sûr moyen d’arriver à nos fins est de suivre la doc d�
 </pre></div>
 </div>
 </section>
-</section>
-<section id="a-vous-de-jouer">
-<h2>À  vous de jouer !<a class="headerlink" href="#a-vous-de-jouer" title="Lien permanent vers ce titre"></a></h2>
 </section>
 </section>
 

@@ -56,6 +56,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#corpus">Corpus</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wordnet">WordNet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tokenization">Tokenization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#n-e-r-name-entity-recognition">N.E.R. : Name Entity Recognition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#stop-word">Stop-word</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#stemming">Stemming</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lemmatisation">Lemmatisation</a></li>
@@ -63,7 +64,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#term-frequency-inverse-document-frequency-tf-idf">Term Frequency-Inverse Document Frequency (TF-IDF)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#p-o-s-parts-of-speech-tagging">P.O.S. : Parts Of Speech / Tagging</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#chunking">Chunking</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#n-e-r-name-entity-recognition">N.E.R. : Name Entity Recognition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#parsing">Parsing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#syntax-tree">Syntax-tree</a></li>
 </ul>
@@ -134,7 +134,7 @@
 </section>
 <section id="analyse-semantique">
 <h3>Analyse sémantique<a class="headerlink" href="#analyse-semantique" title="Lien permanent vers ce titre"></a></h3>
-<p>L’analyse sémantique consiste à établir la signification d’une phrase en utilisant le sens des éléments la composant. Dans la NLP, elle s’appuie sur les éléments suivants :</p>
+<p>L’analyse sémantique consiste à établir la signification d’une phrase en utilisant le sens des éléments qui la composent. Dans la NLP, elle s’appuie sur les éléments suivants :</p>
 <ul class="simple">
 <li><p><strong>l’approche linguistique</strong>, avec l’établissement a priori des règles en étudiant le langage ;</p></li>
 <li><p><strong>l’approche statistique</strong>, avec pour base l’analyse de corpus importants, à partir desquels la machine va extraire des règles grâce à l’apprentissage automatique (machine learning) ;</p></li>
@@ -150,17 +150,21 @@
 <h2>Vocabulaire NLTK<a class="headerlink" href="#vocabulaire-nltk" title="Lien permanent vers ce titre"></a></h2>
 <section id="corpus">
 <h3>Corpus<a class="headerlink" href="#corpus" title="Lien permanent vers ce titre"></a></h3>
-<p>Le package nltk.corpus est un ensemble de classes qui permettent de lire un corpus. Classes qui peuvent être utilisées pour accéder aux contenus d’un ensemble de corpora variés. La liste complète de ces corpora est donnée ici : <a class="reference external" href="https://www.nltk.org/nltk_data/">https://www.nltk.org/nltk_data/</a></p>
+<p>Le package nltk.corpus est un ensemble de classes qui permettent de lire un corpus. Classes qui peuvent être utilisées pour accéder aux contenus d’un ensemble de corpus variés. La liste complète de ces corpora est donnée ici : <a class="reference external" href="https://www.nltk.org/nltk_data/">https://www.nltk.org/nltk_data/</a></p>
 </section>
 <section id="wordnet">
 <h3>WordNet<a class="headerlink" href="#wordnet" title="Lien permanent vers ce titre"></a></h3>
-<p>WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l’université de Princeton depuis une vingtaine d’années3. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d’autres langues existent, mais la version anglaise est cependant la plus complète à ce jour <a class="footnote-reference brackets" href="#id2" id="id1">1</a>
+<p>WordNet est une base de données lexicale open source développée par des linguistes du laboratoire des sciences cognitives de l’université de Princeton depuis une vingtaine d’années. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d’autres langues existent, mais la version anglaise est cependant la plus complète à ce jour. <a class="footnote-reference brackets" href="#id2" id="id1">1</a>
 Elle est intéégrée au sein de la bibliothèque NLTK.
-Wordnet permet aussi d’obtenir des synonymes ou encore des antonymes. Enfin, elle est disponible dans d’autres packages, elle est Open Source.</p>
+Wordnet permet aussi d’obtenir des synonymes ou encore des antonymes.</p>
 </section>
 <section id="tokenization">
 <h3>Tokenization<a class="headerlink" href="#tokenization" title="Lien permanent vers ce titre"></a></h3>
 <p>Il s’agit de découper le texte en « tokens », le token étant une unité sémantique individuelle avec un sens grammatical. En tokenizant, si un mot apparaît plusieurs fois dans le texte, il sera compté plusieurs fois.</p>
+</section>
+<section id="n-e-r-name-entity-recognition">
+<h3>N.E.R. : Name Entity Recognition<a class="headerlink" href="#n-e-r-name-entity-recognition" title="Lien permanent vers ce titre"></a></h3>
+<p>Vient en complémentarité de la tokenization d’une texte pour identifier des catégories de noms : entreprises, locations, géopolitiques, organisations, personnes, géo-sociologiques. Se fait également à l’aide de la méthode de chunking.</p>
 </section>
 <section id="stop-word">
 <h3>Stop-word<a class="headerlink" href="#stop-word" title="Lien permanent vers ce titre"></a></h3>
@@ -196,10 +200,6 @@ Il existe plusieurs types de lemmatisation : Porter et Lancaster qui sont basée
 <section id="chunking">
 <h3>Chunking<a class="headerlink" href="#chunking" title="Lien permanent vers ce titre"></a></h3>
 <p>Chunk = morceau. Rassembler des éléments de langages individuels en plus gros groupes (verbaux, nominaux, compléments divers, etc.).</p>
-</section>
-<section id="n-e-r-name-entity-recognition">
-<h3>N.E.R. : Name Entity Recognition<a class="headerlink" href="#n-e-r-name-entity-recognition" title="Lien permanent vers ce titre"></a></h3>
-<p>Vient en complémentarité de la tokenization d’une texte pour identifier des catégories de noms : entreprises, locations, géopolitiques, organisations, personnes, géo-sociologiques. Se fait également à l’aide de la méthode de chunking.</p>
 </section>
 <section id="parsing">
 <h3>Parsing<a class="headerlink" href="#parsing" title="Lien permanent vers ce titre"></a></h3>

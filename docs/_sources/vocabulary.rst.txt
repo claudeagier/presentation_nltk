@@ -33,7 +33,7 @@ En linguistique, le sens est la signification d'une expression (mot, syntagme, p
 
 Analyse sémantique
 ~~~~~~~~~~~~~~~~~~
-L’analyse sémantique consiste à établir la signification d’une phrase en utilisant le sens des éléments la composant. Dans la NLP, elle s'appuie sur les éléments suivants :
+L’analyse sémantique consiste à établir la signification d’une phrase en utilisant le sens des éléments qui la composent. Dans la NLP, elle s'appuie sur les éléments suivants :
 
 - **l’approche linguistique**, avec l'établissement a priori des règles en étudiant le langage ;
 - **l’approche statistique**, avec pour base l’analyse de corpus importants, à partir desquels la machine va extraire des règles grâce à l’apprentissage automatique (machine learning) ;
@@ -50,17 +50,22 @@ Vocabulaire NLTK
 Corpus 
 ~~~~~~
 
-Le package nltk.corpus est un ensemble de classes qui permettent de lire un corpus. Classes qui peuvent être utilisées pour accéder aux contenus d'un ensemble de corpora variés. La liste complète de ces corpora est donnée ici : https://www.nltk.org/nltk_data/
+Le package nltk.corpus est un ensemble de classes qui permettent de lire un corpus. Classes qui peuvent être utilisées pour accéder aux contenus d'un ensemble de corpus variés. La liste complète de ces corpora est donnée ici : https://www.nltk.org/nltk_data/
 
 WordNet
 ~~~~~~~
-WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l'université de Princeton depuis une vingtaine d'années3. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d'autres langues existent, mais la version anglaise est cependant la plus complète à ce jour [#]_ 
+WordNet est une base de données lexicale open source développée par des linguistes du laboratoire des sciences cognitives de l'université de Princeton depuis une vingtaine d'années. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d'autres langues existent, mais la version anglaise est cependant la plus complète à ce jour. [#]_ 
 Elle est intéégrée au sein de la bibliothèque NLTK. 
-Wordnet permet aussi d'obtenir des synonymes ou encore des antonymes. Enfin, elle est disponible dans d'autres packages, elle est Open Source.
+Wordnet permet aussi d'obtenir des synonymes ou encore des antonymes.
 
 Tokenization
 ~~~~~~~~~~~~~~
 Il s'agit de découper le texte en "tokens", le token étant une unité sémantique individuelle avec un sens grammatical. En tokenizant, si un mot apparaît plusieurs fois dans le texte, il sera compté plusieurs fois.
+
+N.E.R. : Name Entity Recognition 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Vient en complémentarité de la tokenization d'une texte pour identifier des catégories de noms : entreprises, locations, géopolitiques, organisations, personnes, géo-sociologiques. Se fait également à l'aide de la méthode de chunking.
 
 Stop-word
 ~~~~~~~~~
@@ -96,11 +101,6 @@ Cette méthode consiste à analyser la nature sémantique des mots d'un texte : 
 Chunking
 ~~~~~~~~~~~~~~
 Chunk = morceau. Rassembler des éléments de langages individuels en plus gros groupes (verbaux, nominaux, compléments divers, etc.).
-
-N.E.R. : Name Entity Recognition 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Vient en complémentarité de la tokenization d'une texte pour identifier des catégories de noms : entreprises, locations, géopolitiques, organisations, personnes, géo-sociologiques. Se fait également à l'aide de la méthode de chunking.
 
 Parsing
 ~~~~~~~~~~~~~~

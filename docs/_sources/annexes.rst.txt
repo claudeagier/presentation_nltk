@@ -35,6 +35,7 @@ https://www.youtube.com/playlist?list=PLBSCvBlTOLa_wS8iy84DfyizdSs7ps7L5
 
 https://www.youtube.com/playlist?list=PLcTXcpndN-Sl9eYrKM6jtcOTgC52EJnqH
 
+
 Cheatsheet
 ~~~~~~~~~~~~
 https://cheatography.com/murenei/cheat-sheets/natural-language-processing-with-python-and-nltk/pdf/
