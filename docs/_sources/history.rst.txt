@@ -5,9 +5,9 @@ Un peu d'histoire
 ================================
 
 
-.. figure:: ./Images/papy.jpg
-    :align: center
-     
+    .. figure:: ./Images/papy.jpg
+        :align: center
+        
 
 Le NLP ou TAL, c'est quoi ça ?
 ------------------------------
@@ -35,8 +35,8 @@ De nos jours, les ordinateurs personnels sont partout et les applications du NLP
 
 
 
-.. figure:: ./Images/nltk.jpg
-    :align: center 
+    .. figure:: ./Images/nltk.jpg
+        :align: center 
 
 Création
 -----------------
@@ -66,6 +66,9 @@ Stats, machine learning, IA, sciences cognitives, linguistique, études sémanti
     Bien que couvrant plusieurs langues - dont le français, NLTK est avant tout une bibliothèque anglophone.
 
 :text-bold:`Et plus concrètement, dans la vie de tous les jours ?`
+
+    .. figure:: ./Images/lost.jpg
+        :align: center 
 
 - traduction de texte (DeepL par exemple)
 - correcteur orthographique
@@ -101,21 +104,21 @@ A cela, les auteurs ajoutent trois aspects qu'ils ont délibérément "omis" de 
 
 "D'abord, NLTK est une boîte à outils, pas une encyclopédie exhaustive ou un système destiné au NLP [...], ensuite, NLTK est une boîte à outils suffisamment élaborée pour remplir de nombreuses analyses et tâches sans pour autant être optimisée en termes de performances matérielles. Nous avons choisi la commodité d'utilisation et de programmation. [...] Enfin, nous avons évité une programmation trop poussive puisque nous croyons en la logique et l'ingéniosité, plutôt qu'en d'indéchiffrables salmigondis algorithmiques."
 
-.. NOTE::
-    On notera que le NLP se transforme en Natural Language Understanding (NLU) lorsqu'on lui applique des méthodes de machine learning.
+    .. NOTE::
+        On notera que le NLP se transforme en Natural Language Understanding (NLU) lorsqu'on lui applique des méthodes de machine learning.
 
 Les principaux concurrents 
 --------------------------
 
-* **spaCy(Python)**
+**spaCy(Python)**
 
-.. NOTE::
-    *La différence fondamentale entre NLTK et spaCy réside dans leur construction. NLTK est orientée chaîne de caractères : chaque fonction prend une chaîne de caractères et en retourne une autre. spaCy a une approche orientée objet. Chaque fonction retourne des objets plutôt que des tableaux ou des chaînes de caractères. En gros ça va plus vite et c'est plus élégant.*
+    .. NOTE::
+        *La différence fondamentale entre NLTK et spaCy réside dans leur construction. NLTK est orientée chaîne de caractères : chaque fonction prend une chaîne de caractères et en retourne une autre. spaCy a une approche orientée objet. Chaque fonction retourne des objets plutôt que des tableaux ou des chaînes de caractères. En gros ça va plus vite et c'est plus élégant.*
 
 **TextBlob(Python)**
 
-.. NOTE::
-    *Construit à partir de NLTK, cette bibliothèque se révèle plus accessible*
+    .. NOTE::
+        *Construit à partir de NLTK, cette bibliothèque se révèle plus accessible*
 
 * openNLP (pour Apache)
 * Stanford CoreNLP (Python)

@@ -70,13 +70,13 @@ L'orthodoxie linguistique informatique, après le concile de Californie de 1260,
 **La partie « apprentissage automatique »** ou « Data Science », qui porte sur l’application de modèles de Machine Learning ou Deep Learning à ce jeu de données.
 Ci-dessous : *des exemples d'analyse du langage et les modules correspondant*
 
-.. figure:: ./Images/ortho.jpg
-    :align: center
+    .. figure:: ./Images/ortho.jpg
+        :align: center
 
 De manière très synthétique, on peut résumer l'utilisation de la bibliothèque NLTK en 4 grandes points : **préparation**, **extraction**, **analyse**, **prediction**.
 
-.. figure:: ./Images/tableau.png
-    :align: center
+    .. figure:: ./Images/tableau.png
+        :align: center
 
 Contraintes
 -----------

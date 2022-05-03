@@ -3,8 +3,8 @@ Vocabulaire
 
 
 .. role:: text-bold
-.. figure:: ./Images/voc.jpg 
-    :align: center 
+    .. figure:: ./Images/voc.jpg 
+        :align: center 
 
 .. NOTE::
     Nous allons bien sûr rester ici dans le domaine du vocabulaire propre à la bibliothèque et ne pas nous attarder sur des notions de linguistique qui s'avéreraient trop complexes.
@@ -21,8 +21,8 @@ Linguistique
 ~~~~~~~~~~~~~~
 Science qui a la langue pour objet. 
 
-.. figure:: ./Images/wat.jpg
-    :align: center 
+    .. figure:: ./Images/wat.jpg
+        :align: center 
 
 
 
@@ -30,7 +30,7 @@ Science qui a la langue pour objet.
     Au passage, ceci est un mythe, merci de l'oublier pour de bon.
    
    
-.. figure:: ./Images/wrong.png
+    .. figure:: ./Images/wrong.png
 
 Sens
 ~~~~~~~~~~~~~~
@@ -85,9 +85,9 @@ Term-Frequency (TF)
 
 Cette méthode consiste à compter le nombre d’occurrences des mots présents dans le corpus pour chaque texte. Chaque texte est alors représenté par un vecteur d’occurrences. On parle généralement de Bag-Of-Word, ou sac de mots en français.
 
-.. NOTE::
+    .. NOTE::
 
-    Cette approche présente un inconvénient majeur : certains mots sont par nature plus utilisés que d’autres, ce qui peut conduire le modèle à des résultats erronés.
+        Cette approche présente un inconvénient majeur : certains mots sont par nature plus utilisés que d’autres, ce qui peut conduire le modèle à des résultats erronés.
 
 Term Frequency-Inverse Document Frequency (TF-IDF)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,12 +115,12 @@ Syntax-tree
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Il représente la structure syntaxique d'une phrase, de manière visuelle, graphique. Dans la bibliothèque NLTK, l'arbre donne une représentation visuelle de l'organisation syntaxique de la phrase, basée sur le travail de tagging . Chaque rameau est relié à une branche par un "node" (nœud), elle-même reliée au tronc qui représente la phrase dans son ensemble.
 
-.. figure:: ./Images/syntax_tree.png
-    :align: center 
+    .. figure:: ./Images/syntax_tree.png
+        :align: center 
 
-.. WARNING::
+    .. WARNING::
 
-    Plus le vocabulaire du corpus est riche, plus la taille des vecteurs est grande, ce qui peut représenter un problème pour les modèles d’apprentissage.
-    Le comptage d’occurrences de mots ne permet pas de rendre compte de leur agencement et donc du sens des phrases.
+        Plus le vocabulaire du corpus est riche, plus la taille des vecteurs est grande, ce qui peut représenter un problème pour les modèles d’apprentissage.
+        Le comptage d’occurrences de mots ne permet pas de rendre compte de leur agencement et donc du sens des phrases.
 
 .. [#] *Source* : https://fr.wikipedia.org/wiki/WordNet

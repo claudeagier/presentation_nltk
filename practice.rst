@@ -4,8 +4,8 @@
 NLTK dans la pratique
 =====================
 
-.. figure:: ./Images/idea.png
-    :align: center
+    .. figure:: ./Images/idea.png
+        :align: center
 
 Démonstration
 -------------

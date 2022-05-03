@@ -101,9 +101,6 @@
              
   <section id="vocabulaire">
 <h1>Vocabulaire<a class="headerlink" href="#vocabulaire" title="Lien permanent vers ce titre"></a></h1>
-<figure class="align-center">
-<img alt="_images/voc.jpg" src="_images/voc.jpg" />
-</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Nous allons bien sûr rester ici dans le domaine du vocabulaire propre à la bibliothèque et ne pas nous attarder sur des notions de linguistique qui s’avéreraient trop complexes.</p>
@@ -117,16 +114,18 @@
 <section id="linguistique">
 <h3>Linguistique<a class="headerlink" href="#linguistique" title="Lien permanent vers ce titre"></a></h3>
 <p>Science qui a la langue pour objet.</p>
-<figure class="align-center">
+<blockquote>
+<div><figure class="align-center">
 <img alt="_images/wat.jpg" src="_images/wat.jpg" />
 </figure>
+</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Au passage, ceci est un mythe, merci de l’oublier pour de bon.</p>
-</div>
 <figure class="align-default">
 <img alt="_images/wrong.png" src="_images/wrong.png" />
 </figure>
+</div>
 </section>
 <section id="sens">
 <h3>Sens<a class="headerlink" href="#sens" title="Lien permanent vers ce titre"></a></h3>
@@ -178,10 +177,12 @@ Il existe plusieurs types de lemmatisation : Porter et Lancaster qui sont basée
 <section id="term-frequency-tf">
 <h3>Term-Frequency (TF)<a class="headerlink" href="#term-frequency-tf" title="Lien permanent vers ce titre"></a></h3>
 <p>Cette méthode consiste à compter le nombre d’occurrences des mots présents dans le corpus pour chaque texte. Chaque texte est alors représenté par un vecteur d’occurrences. On parle généralement de Bag-Of-Word, ou sac de mots en français.</p>
-<div class="admonition note">
+<blockquote>
+<div><div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Cette approche présente un inconvénient majeur : certains mots sont par nature plus utilisés que d’autres, ce qui peut conduire le modèle à des résultats erronés.</p>
 </div>
+</div></blockquote>
 </section>
 <section id="term-frequency-inverse-document-frequency-tf-idf">
 <h3>Term Frequency-Inverse Document Frequency (TF-IDF)<a class="headerlink" href="#term-frequency-inverse-document-frequency-tf-idf" title="Lien permanent vers ce titre"></a></h3>
@@ -206,7 +207,8 @@ Il existe plusieurs types de lemmatisation : Porter et Lancaster qui sont basée
 <section id="syntax-tree">
 <h3>Syntax-tree<a class="headerlink" href="#syntax-tree" title="Lien permanent vers ce titre"></a></h3>
 <p>Il représente la structure syntaxique d’une phrase, de manière visuelle, graphique. Dans la bibliothèque NLTK, l’arbre donne une représentation visuelle de l’organisation syntaxique de la phrase, basée sur le travail de tagging . Chaque rameau est relié à une branche par un « node » (nœud), elle-même reliée au tronc qui représente la phrase dans son ensemble.</p>
-<figure class="align-center">
+<blockquote>
+<div><figure class="align-center">
 <img alt="_images/syntax_tree.png" src="_images/syntax_tree.png" />
 </figure>
 <div class="admonition warning">
@@ -214,6 +216,7 @@ Il existe plusieurs types de lemmatisation : Porter et Lancaster qui sont basée
 <p>Plus le vocabulaire du corpus est riche, plus la taille des vecteurs est grande, ce qui peut représenter un problème pour les modèles d’apprentissage.
 Le comptage d’occurrences de mots ne permet pas de rendre compte de leur agencement et donc du sens des phrases.</p>
 </div>
+</div></blockquote>
 <dl class="footnote brackets">
 <dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p><em>Source</em> : <a class="reference external" href="https://fr.wikipedia.org/wiki/WordNet">https://fr.wikipedia.org/wiki/WordNet</a></p>
