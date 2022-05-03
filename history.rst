@@ -28,8 +28,6 @@ De nos jours, les ordinateurs personnels sont partout et les applications du NLP
 
 
 
-
-
 .. figure:: ./Images/nltk.jpg
     :align: center 
 
