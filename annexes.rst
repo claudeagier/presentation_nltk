@@ -19,6 +19,8 @@ http://www2.agroparistech.fr/ufr-info/membres/cornuejols/Teaching/AGRO/Cours-IA_
 
 https://fr.acervolima.com/application-de-bayes-naives-multinomiales-aux-problemes-de-pnl/
 
+https://cs.stanford.edu/people/eroberts/courses/soco/projects/2004-05/nlp/overview_history.html
+
 Un livre
 ~~~~~~~~~
 

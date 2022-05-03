@@ -4,6 +4,32 @@
 Un peu d'histoire
 ================================
 
+Le NLP ou TAL, c'est quoi ça ?
+------------------------------
+Les recherches dans le domaine du Natural Language Processing (NLP) ou Traitement Automatique du Langage (TAL) ont commencé dans les années 40, surtout après la Seconde Guerre Mondiale. À cette époque, l’importance de la traduction d’une langue à une autre s’est avérée une nécessité (on pense à tous les problèmes d’espionnage qui ont pu avoir lieu, sans parler des communications entre les deux blocs pas toujours aisées). Naturellement, les recherches autour d’une automatisation d’un tel process se sont organisées.
+
+A la fin des années 50, les premières tentatives montrèrent rapidement leurs limites. Les machines employées à ces tâches renvoyaient de phrases insensées mais grammaticalement correctes dos-à-dos avec des phrases insensées et grammaticalement fausses. Noam Chomsky qui a eu une influence décisive dans ces recherches a commencé à postuler que si les hommes pouvaient faire une distinction, la même chose devait être attendue des machines.
+
+Dans les décennies suivantes, les recherches dans le domaine du NLP ont donné naissance à deux écoles : l’école symbolique et l’école stochastique. La première, constituée de linguistes et informaticiens chercheurs, attachée à la structure formelle du langage et la syntaxe (l’ancêtre de l’intelligence artificielle), la seconde intéressée par une approche statistique et/ou probabiliste du langage (reconnaissance de modèles, de récurrences, etc., entre différents corpus de textes).
+
+Après les années 1970, les écoles de recherches dans le domaine se sont encore plus multipliées du fait des avancées dans les domaines de la technologie et du savoir. Il y eut des essais, notamment avec le langage PROLOG. Le premier programme SHDRLU vit le jour, avec un ordinateur qui, dans un environnement simple composé de blocs, pouvait lier des relations entre ceux-ci (par les couleurs, les formes) et répondre de manière juste à des 
+Un autre domaine auquel le NLP s’est attaché dans les années 70 est celui du modèle discursif. Il examine les relations et échanges entre personnes et ordinateurs : par exemple pour que l’ordinateur puisse répondre « moi » à une question formulée avec un « tu ».
+Dans les années 80, les chercheurs se sont plus focalisés sur des modèles empiristes et probabilistes. Les années 90, quant à elles, ont clairement vu les méthodes statistiques et probabilistes prendre l’ascendant.
+
+Dans les deux dernières décennies, le NLP s’est aussi beaucoup centré sur l’extraction et la génération d’information avec l’explosion d’Internet.
+De nos jours, les ordinateurs personnels sont partout et les applications du NLP sont de plus en plus étendues. [#]_
+
+.. raw:: html
+    
+    <p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/QAJz4YKUwqw?controls=0" title="Le premier programme de NLP" frameborder="0"></iframe><center></p>
+    
+
+*premier programme de NLP SHRDLU*
+
+
+
+
+
 .. figure:: ./Images/nltk.jpg
     :align: center 
 
@@ -76,8 +102,8 @@ On notera que le NLP se transforme en Natural Language Understanding (NLU) lorsq
 Les principaux concurrents 
 --------------------------
 
-* spaCy(Python)
-* TextBlob(Python)
+* **spaCy(Python)**
+* **TextBlob(Python)**
 * openNLP (Apache)
 * Stanford CoreNLP (Python)
 * Amazon Comprehend (API Amazon)
@@ -104,3 +130,4 @@ La dernière mise à jour date de février 2022 et visait à aider à supporter 
 
 
 .. [#] https://www.stat4decision.com/fr/traitement-langage-naturel-francais-tal-nlp/
+.. [#] https://cs.stanford.edu/people/eroberts/courses/soco/projects/2004-05/nlp/overview_history.html

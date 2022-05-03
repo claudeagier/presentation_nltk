@@ -66,11 +66,11 @@ Corpus
 
 Le package nltk.corpus est un ensemble de classes qui permettent de lire un corpus. Classes qui peuvent être utilisées pour accéder aux contenus d'un ensemble de corpora variés. La liste complète de ces corpora est donnée ici : https://www.nltk.org/nltk_data/
 
-Wordnet
+WordNet
 ~~~~~~~
 WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l'université de Princeton depuis une vingtaine d'années3. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d'autres langues existent, mais la version anglaise est cependant la plus complète à ce jour [#]_ 
 Elle est intéégrée au sein de la bibliothèque NLTK. 
-Wordnet permet aussi d'obtenir des synonymes ou encore des antonymes.
+Wordnet permet aussi d'obtenir des synonymes ou encore des antonymes. Enfin, elle est disponible dans d'autres packages, elle est Open Source.
 
 Tokenization
 ~~~~~~~~~~~~~~
@@ -120,7 +120,7 @@ Parsing
 ~~~~~~~~~~~~~~
 Méthode utilisée pour passer en revue tous les éléments d'un texte afin d'en dégager une arborescence. Bien qu'il puisse être utilisé pour identifier les différents éléments d'un texte, le parsing peut aussi servir à analyser les morphèmes (soit les composantes morphologiques d'un mot).
 
-Arbre syntaxique
+Classification
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Il représente la structure syntaxique d'une phrase. Dans la bibliothèque NLTK, l'arbre donne une représentation visuelle de l'organisation syntaxique de la phrase, basée sur le travail de tagging . Chaque rameau est relié à une branche par un "node" (nœud), elle-même reliée au tronc qui représente la phrase dans son ensemble.
 
