@@ -24,7 +24,7 @@ De nos jours, les ordinateurs personnels sont partout et les applications du NLP
     <p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/QAJz4YKUwqw?controls=0" title="Le premier programme de NLP" frameborder="0"></iframe><center></p>
     
 
-*premier programme de NLP SHRDLU*
+*premier programme de NLP SHDRLU*
 
 
 
