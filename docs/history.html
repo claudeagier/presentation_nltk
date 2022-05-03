@@ -29,7 +29,8 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> presentation_ntlk
+            <a href="index.html">
+            <img src="_static/python_nltk.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -42,6 +43,7 @@
               <p class="caption" role="heading"><span class="caption-text">Table des matières :</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Un peu d’histoire</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#le-nlp-ou-tal-c-est-quoi-ca">Le NLP ou TAL, c’est quoi ça ?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#qui">Qui ?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#creation">Création</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#quelques-domaines-d-utilisation-de-la-bibliotheque">Quelques domaines d’utilisation de la bibliothèque</a></li>
@@ -83,9 +85,21 @@
              
   <section id="un-peu-d-histoire">
 <h1>Un peu d’histoire<a class="headerlink" href="#un-peu-d-histoire" title="Lien permanent vers ce titre"></a></h1>
+<section id="le-nlp-ou-tal-c-est-quoi-ca">
+<h2>Le NLP ou TAL, c’est quoi ça ?<a class="headerlink" href="#le-nlp-ou-tal-c-est-quoi-ca" title="Lien permanent vers ce titre"></a></h2>
+<p>Les recherches dans le domaine du Natural Language Processing (NLP) ou Traitement Automatique du Langage (TAL) ont commencé dans les années 40, surtout après la Seconde Guerre Mondiale. À cette époque, l’importance de la traduction d’une langue à une autre s’est avérée une nécessité (on pense à tous les problèmes d’espionnage qui ont pu avoir lieu, sans parler des communications entre les deux blocs pas toujours aisées). Naturellement, les recherches autour d’une automatisation d’un tel process se sont organisées.</p>
+<p>A la fin des années 50, les premières tentatives montrèrent rapidement leurs limites. Les machines employées à ces tâches renvoyaient de phrases insensées mais grammaticalement correctes dos-à-dos avec des phrases insensées et grammaticalement fausses. Noam Chomsky qui a eu une influence décisive dans ces recherches a commencé à postuler que si les hommes pouvaient faire une distinction, la même chose devait être attendue des machines.</p>
+<p>Dans les décennies suivantes, les recherches dans le domaine du NLP ont donné naissance à deux écoles : l’école symbolique et l’école stochastique. La première, constituée de linguistes et informaticiens chercheurs, attachée à la structure formelle du langage et la syntaxe (l’ancêtre de l’intelligence artificielle), la seconde intéressée par une approche statistique et/ou probabiliste du langage (reconnaissance de modèles, de récurrences, etc., entre différents corpus de textes).</p>
+<p>Après les années 1970, les écoles de recherches dans le domaine se sont encore plus multipliées du fait des avancées dans les domaines de la technologie et du savoir. Il y eut des essais, notamment avec le langage PROLOG. Le premier programme SHDRLU vit le jour, avec un ordinateur qui, dans un environnement simple composé de blocs, pouvait lier des relations entre ceux-ci (par les couleurs, les formes) et répondre de manière juste à des
+Un autre domaine auquel le NLP s’est attaché dans les années 70 est celui du modèle discursif. Il examine les relations et échanges entre personnes et ordinateurs : par exemple pour que l’ordinateur puisse répondre « moi » à une question formulée avec un « tu ».
+Dans les années 80, les chercheurs se sont plus focalisés sur des modèles empiristes et probabilistes. Les années 90, quant à elles, ont clairement vu les méthodes statistiques et probabilistes prendre l’ascendant.</p>
+<p>Dans les deux dernières décennies, le NLP s’est aussi beaucoup centré sur l’extraction et la génération d’information avec l’explosion d’Internet.
+De nos jours, les ordinateurs personnels sont partout et les applications du NLP sont de plus en plus étendues. <a class="footnote-reference brackets" href="#id3" id="id1">1</a></p>
+<p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/QAJz4YKUwqw?controls=0" title="Le premier programme de NLP" frameborder="0"></iframe><center></p><p><em>premier programme de NLP SHRDLU</em></p>
 <figure class="align-center">
 <img alt="_images/nltk.jpg" src="_images/nltk.jpg" />
 </figure>
+</section>
 <section id="qui">
 <h2>Qui ?<a class="headerlink" href="#qui" title="Lien permanent vers ce titre"></a></h2>
 <p><strong>Steven Bird</strong> a étudié l’ingénierie informatique à l’Université de Melbourne et réalisé une thèse en linguistique informatique à l’Université d’Edinburgh. Il a aussi étudié, sur le terrain, les langues d’Afrique de l’Ouest, d’Amérique du Sud, d’Asie Centrale, Mélanésie et Australie.</p>
@@ -114,7 +128,7 @@ Il a une thèse en Computer Science. Ses recherches actuelles portent sur la lin
 <li><p>classification de texte</p></li>
 <li><p>analyse d’opinion/sentiment</p></li>
 <li><p>prédiction du prochain mot sur smartphone</p></li>
-<li><p>extraction des entités nommées depuis un texte <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p></li>
+<li><p>extraction des entités nommées depuis un texte <a class="footnote-reference brackets" href="#id4" id="id2">2</a></p></li>
 </ul>
 </section>
 <section id="les-objectifs-de-la-bibliotheque">
@@ -135,8 +149,8 @@ Il a une thèse en Computer Science. Ses recherches actuelles portent sur la lin
 <section id="les-principaux-concurrents">
 <h2>Les principaux concurrents<a class="headerlink" href="#les-principaux-concurrents" title="Lien permanent vers ce titre"></a></h2>
 <ul class="simple">
-<li><p>spaCy(Python)</p></li>
-<li><p>TextBlob(Python)</p></li>
+<li><p><strong>spaCy(Python)</strong></p></li>
+<li><p><strong>TextBlob(Python)</strong></p></li>
 <li><p>openNLP (Apache)</p></li>
 <li><p>Stanford CoreNLP (Python)</p></li>
 <li><p>Amazon Comprehend (API Amazon)</p></li>
@@ -154,8 +168,11 @@ Il a une thèse en Computer Science. Ses recherches actuelles portent sur la lin
 <h2>Roadmap<a class="headerlink" href="#roadmap" title="Lien permanent vers ce titre"></a></h2>
 <p>La dernière mise à jour date de février 2022 et visait à aider à supporter le passage à Python 3.10. Il n’y a pour l’instant, à l’heure où nous écrivons ces lignes, aucune autre mise à jour de prévue.</p>
 <dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p><a class="reference external" href="https://www.stat4decision.com/fr/traitement-langage-naturel-francais-tal-nlp/">https://www.stat4decision.com/fr/traitement-langage-naturel-francais-tal-nlp/</a></p>
+</dd>
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p><a class="reference external" href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/2004-05/nlp/overview_history.html">https://cs.stanford.edu/people/eroberts/courses/soco/projects/2004-05/nlp/overview_history.html</a></p>
 </dd>
 </dl>
 </section>

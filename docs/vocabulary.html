@@ -29,7 +29,8 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> presentation_ntlk
+            <a href="index.html">
+            <img src="_static/python_nltk.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -54,7 +55,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#vocabulaire-nltk">Vocabulaire NLTK</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#corpus">Corpus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#wordnet">Wordnet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wordnet">WordNet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tokenization">Tokenization</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#stop-word">Stop-word</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#stemming">Stemming</a></li>
@@ -65,7 +66,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#chunking">Chunking</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#n-e-r-name-entity-recognition">N.E.R. : Name Entity Recognition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#parsing">Parsing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#arbre-syntaxique">Arbre syntaxique</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#classification">Classification</a></li>
 </ul>
 </li>
 </ul>
@@ -161,10 +162,10 @@ Ce théorème donne surtout de très bon résultats pour la classification. Ceci
 <p>Le package nltk.corpus est un ensemble de classes qui permettent de lire un corpus. Classes qui peuvent être utilisées pour accéder aux contenus d’un ensemble de corpora variés. La liste complète de ces corpora est donnée ici : <a class="reference external" href="https://www.nltk.org/nltk_data/">https://www.nltk.org/nltk_data/</a></p>
 </section>
 <section id="wordnet">
-<h3>Wordnet<a class="headerlink" href="#wordnet" title="Lien permanent vers ce titre"></a></h3>
-<p>WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l’université de Princeton depuis une vingtaine d’années. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d’autres langues existent, mais la version anglaise est cependant la plus complète à ce jour <a class="footnote-reference brackets" href="#id2" id="id1">1</a>
-Elle est intégrée au sein de la bibliothèque NLTK.
-Wordnet permet aussi d’obtenir des synonymes ou encore des antonymes.</p>
+<h3>WordNet<a class="headerlink" href="#wordnet" title="Lien permanent vers ce titre"></a></h3>
+<p>WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l’université de Princeton depuis une vingtaine d’années3. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d’autres langues existent, mais la version anglaise est cependant la plus complète à ce jour <a class="footnote-reference brackets" href="#id2" id="id1">1</a>
+Elle est intéégrée au sein de la bibliothèque NLTK.
+Wordnet permet aussi d’obtenir des synonymes ou encore des antonymes. Enfin, elle est disponible dans d’autres packages, elle est Open Source.</p>
 </section>
 <section id="tokenization">
 <h3>Tokenization<a class="headerlink" href="#tokenization" title="Lien permanent vers ce titre"></a></h3>
@@ -211,8 +212,8 @@ Il existe plusieurs types de lemmatisation : Porter et Lancaster qui sont basée
 <h3>Parsing<a class="headerlink" href="#parsing" title="Lien permanent vers ce titre"></a></h3>
 <p>Méthode utilisée pour passer en revue tous les éléments d’un texte afin d’en dégager une arborescence. Bien qu’il puisse être utilisé pour identifier les différents éléments d’un texte, le parsing peut aussi servir à analyser les morphèmes (soit les composantes morphologiques d’un mot).</p>
 </section>
-<section id="arbre-syntaxique">
-<h3>Arbre syntaxique<a class="headerlink" href="#arbre-syntaxique" title="Lien permanent vers ce titre"></a></h3>
+<section id="classification">
+<h3>Classification<a class="headerlink" href="#classification" title="Lien permanent vers ce titre"></a></h3>
 <p>Il représente la structure syntaxique d’une phrase. Dans la bibliothèque NLTK, l’arbre donne une représentation visuelle de l’organisation syntaxique de la phrase, basée sur le travail de tagging . Chaque rameau est relié à une branche par un « node » (nœud), elle-même reliée au tronc qui représente la phrase dans son ensemble.</p>
 <figure class="align-center">
 <img alt="_images/syntax_tree.png" src="_images/syntax_tree.png" />
