@@ -49,14 +49,13 @@ Naive Bayes Classifier
 C'est un peu l'esprit du fonctionnement de la bibliothèque NLTK.
 Le naive Bayes classifier se base sur le théorème de Bayes. Ce dernier est un classique de la théorie des probabilités. Ce théorème est fondé sur les probabilités conditionnelles.
 
-**Probabilité conditionnelle** : quelle est la probabilité qu’un événement se produise sachant qu’un autre événement s’est déjà produit.
+**Probabilité conditionnelle** : quelle est la probabilité qu’un événement se produise sachant qu’un autre événement s’est déjà produit ?
 
 Le terme “naive” vient du fait qu’on suppose l'indépendance des variables.
 Ce théorème donne surtout de très bon résultats pour la classification. Ceci est paradoxal car on suppose une indépendance forte entre les différentes conditions.
 
 .. figure:: ./Images/wat.jpg
     :align: center 
-
 
 
 Vocabulaire NLTK 
@@ -70,7 +69,8 @@ Le package nltk.corpus est un ensemble de classes qui permettent de lire un corp
 Wordnet
 ~~~~~~~
 WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l'université de Princeton depuis une vingtaine d'années3. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d'autres langues existent, mais la version anglaise est cependant la plus complète à ce jour [#]_ 
-Elle est intéégrée au sein de la bibliothèque NLTK
+Elle est intéégrée au sein de la bibliothèque NLTK. 
+Wordnet permet aussi d'obtenir des synonymes ou encore des antonymes.
 
 Tokenization
 ~~~~~~~~~~~~~~

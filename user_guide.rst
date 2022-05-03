@@ -60,14 +60,14 @@ Principes
 .. figure:: ./Images/schema.png
 
 
-Méthode
--------
+Méthode (Orthodoxie) :
+----------------------
 
 L'orthodoxie linguistique informatique, après le concile de Californie de 1260, sous le patronage oecuménique des représentants de la Vraie Religion (Python) ainsi que des autres hérésies tolérées (R, Ruby, Pascal, C+, etc.), et après acceptation du phonème comme un et indivisible, procédant du Verbe vrai et étant le Son originel, distingue deux méthodes essentielles :
 
-:text-bold:`La partie « linguistique »`, qui consiste à prétraiter et transformer les informations en entrée en un jeu de données exploitable.
+**La partie « linguistique »**, qui consiste à prétraiter et transformer les informations en entrée en un jeu de données exploitable.
 
-:text-bold:`La partie « apprentissage automatique »` ou « Data Science », qui porte sur l’application de modèles de Machine Learning ou Deep Learning à ce jeu de données.
+**La partie « apprentissage automatique »** ou « Data Science », qui porte sur l’application de modèles de Machine Learning ou Deep Learning à ce jeu de données.
 
 .. figure:: ./Images/ortho.jpg
     :align: center
@@ -81,7 +81,7 @@ NLTK fonctionne avec Python version 2 & 3
 
 Technologies
 ------------
-NLTK possède un ensemble de sous-packages et sous-modules pour la visualisation et l'intégration d'API (notamment des API en liens avec les réseaux sociaux)
+NLTK possède un ensemble de sous-packages et sous-modules pour la visualisation et l'intégration d'API (notamment des API en liens avec les réseaux sociaux).
 Les dernières failles de sécurité répertoriées (et réparées) concernaient de possibles attaques ReDoS (Regular Expression Denial of Service).
 
 Limites
