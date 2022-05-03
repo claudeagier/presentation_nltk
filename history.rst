@@ -4,6 +4,10 @@
 Un peu d'histoire
 ================================
 
+
+.. figure:: ./Images/papy.jpg
+    :align: center 
+
 Le NLP ou TAL, c'est quoi ça ?
 ------------------------------
 Les recherches dans le domaine du Natural Language Processing (NLP) ou Traitement Automatique du Langage (TAL) ont commencé dans les années 40, surtout après la Seconde Guerre Mondiale. À cette époque, l’importance de la traduction d’une langue à une autre s’est avérée une nécessité (on pense à tous les problèmes d’espionnage qui ont pu avoir lieu, sans parler des communications entre les deux blocs pas toujours aisées). Naturellement, les recherches autour d’une automatisation d’un tel process se sont organisées.
@@ -16,20 +20,27 @@ Après les années 1970, les écoles de recherches dans le domaine se sont encor
 Un autre domaine auquel le NLP s’est attaché dans les années 70 est celui du modèle discursif. Il examine les relations et échanges entre personnes et ordinateurs : par exemple pour que l’ordinateur puisse répondre « moi » à une question formulée avec un « tu ».
 Dans les années 80, les chercheurs se sont plus focalisés sur des modèles empiristes et probabilistes. Les années 90, quant à elles, ont clairement vu les méthodes statistiques et probabilistes prendre l’ascendant.
 
+.. raw:: html
+    
+    <p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/QAJz4YKUwqw?controls=0" title="Le premier programme de NLP" frameborder="0"></iframe></center></p>
+
 Dans les deux dernières décennies, le NLP s’est aussi beaucoup centré sur l’extraction et la génération d’information avec l’explosion d’Internet.
 De nos jours, les ordinateurs personnels sont partout et les applications du NLP sont de plus en plus étendues. [#]_
 
-.. raw:: html
-    
-    <p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/QAJz4YKUwqw?controls=0" title="Le premier programme de NLP" frameborder="0"></iframe><center></p>
+
     
 
-*premier programme de NLP SHDRLU*
+
 
 
 
 .. figure:: ./Images/nltk.jpg
     :align: center 
+
+Création
+-----------------
+
+Création en 2001, première release en 2005, sachant que la dernière version date de février 2022. 
 
 Qui ?
 -----------------
@@ -41,11 +52,6 @@ Il a une thèse en Computer Science. Ses recherches actuelles portent sur la lin
 
 **Ewan Klein** est chercheur dans divers domaines : linguistique théorique, phonologie informatique, syntaxe et sémantique, dialogue parlé avec des machines, text mining dans les domaines de la biologie médicale et de l'histoire digitale, l'utilisation des différentes formes de données dans des contextes de recherches, et le I.O.T.
 
-
-Création
------------------
-
-Création en 2001, première release en 2005, sachant que la dernière version date de février 2022. 
 
 
 Quelques domaines d'utilisation de la bibliothèque 
@@ -101,8 +107,14 @@ Les principaux concurrents
 --------------------------
 
 * **spaCy(Python)**
-* **TextBlob(Python)**
-* openNLP (Apache)
+.. NOTE::
+*La différence fondamentale entre NLTK et spaCy réside dans leur construction. NLTK est orientée chaîne de caractères : chaque fonction prend une chaîne de caractères et en retourne une autre. spaCy a une approche orientée objet. Chaque fonction retourne des objets plutôt que des tableaux ou des chaînes de caractères. En gros ça va plus vite et c'est plus élégant.*
+
+**TextBlob(Python)**
+.. NOTE::
+*Construit à partir de NLTK, cette bibliothèque se révèle plus accessible*
+
+* openNLP (pour Apache)
 * Stanford CoreNLP (Python)
 * Amazon Comprehend (API Amazon)
 * Google Cloud Natural Language (API)
