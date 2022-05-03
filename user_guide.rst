@@ -62,7 +62,9 @@ Principes
 
 Méthode (Orthodoxie) :
 ----------------------
-
+    .. figure:: ./Images/ortho.jpg
+        :align: center
+        
 L'orthodoxie linguistique informatique, après le concile de Californie de 1260, sous le patronage oecuménique des représentants de la Vraie Religion (Python) ainsi que des autres hérésies tolérées (R, Ruby, Pascal, C+, etc.), et après acceptation du phonème comme un et indivisible, procédant du Verbe vrai et étant le Son originel, distingue deux méthodes essentielles :
 
 **La partie « linguistique »**, qui consiste à prétraiter et transformer les informations en entrée en un jeu de données exploitable.
@@ -70,8 +72,7 @@ L'orthodoxie linguistique informatique, après le concile de Californie de 1260,
 **La partie « apprentissage automatique »** ou « Data Science », qui porte sur l’application de modèles de Machine Learning ou Deep Learning à ce jeu de données.
 Ci-dessous : *des exemples d'analyse du langage et les modules correspondant*
 
-    .. figure:: ./Images/ortho.jpg
-        :align: center
+
 
 De manière très synthétique, on peut résumer l'utilisation de la bibliothèque NLTK en 4 grandes points : **préparation**, **extraction**, **analyse**, **prediction**.
 
