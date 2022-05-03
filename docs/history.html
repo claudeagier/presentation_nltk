@@ -44,8 +44,8 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Un peu d’histoire</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#le-nlp-ou-tal-c-est-quoi-ca">Le NLP ou TAL, c’est quoi ça ?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#qui">Qui ?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#creation">Création</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#qui">Qui ?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#quelques-domaines-d-utilisation-de-la-bibliotheque">Quelques domaines d’utilisation de la bibliothèque</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#les-objectifs-de-la-bibliotheque">Les objectifs de la bibliothèque</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#les-principaux-concurrents">Les principaux concurrents</a></li>
@@ -85,6 +85,9 @@
              
   <section id="un-peu-d-histoire">
 <h1>Un peu d’histoire<a class="headerlink" href="#un-peu-d-histoire" title="Lien permanent vers ce titre"></a></h1>
+<figure class="align-center">
+<img alt="_images/papy.jpg" src="_images/papy.jpg" />
+</figure>
 <section id="le-nlp-ou-tal-c-est-quoi-ca">
 <h2>Le NLP ou TAL, c’est quoi ça ?<a class="headerlink" href="#le-nlp-ou-tal-c-est-quoi-ca" title="Lien permanent vers ce titre"></a></h2>
 <p>Les recherches dans le domaine du Natural Language Processing (NLP) ou Traitement Automatique du Langage (TAL) ont commencé dans les années 40, surtout après la Seconde Guerre Mondiale. À cette époque, l’importance de la traduction d’une langue à une autre s’est avérée une nécessité (on pense à tous les problèmes d’espionnage qui ont pu avoir lieu, sans parler des communications entre les deux blocs pas toujours aisées). Naturellement, les recherches autour d’une automatisation d’un tel process se sont organisées.</p>
@@ -93,12 +96,15 @@
 <p>Après les années 1970, les écoles de recherches dans le domaine se sont encore plus multipliées du fait des avancées dans les domaines de la technologie et du savoir. Il y eut des essais, notamment avec le langage PROLOG. Le premier programme SHDRLU vit le jour, avec un ordinateur qui, dans un environnement simple composé de blocs, pouvait lier des relations entre ceux-ci (par les couleurs, les formes) et répondre de manière juste à des
 Un autre domaine auquel le NLP s’est attaché dans les années 70 est celui du modèle discursif. Il examine les relations et échanges entre personnes et ordinateurs : par exemple pour que l’ordinateur puisse répondre « moi » à une question formulée avec un « tu ».
 Dans les années 80, les chercheurs se sont plus focalisés sur des modèles empiristes et probabilistes. Les années 90, quant à elles, ont clairement vu les méthodes statistiques et probabilistes prendre l’ascendant.</p>
-<p>Dans les deux dernières décennies, le NLP s’est aussi beaucoup centré sur l’extraction et la génération d’information avec l’explosion d’Internet.
+<p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/QAJz4YKUwqw?controls=0" title="Le premier programme de NLP" frameborder="0"></iframe></center></p><p>Dans les deux dernières décennies, le NLP s’est aussi beaucoup centré sur l’extraction et la génération d’information avec l’explosion d’Internet.
 De nos jours, les ordinateurs personnels sont partout et les applications du NLP sont de plus en plus étendues. <a class="footnote-reference brackets" href="#id3" id="id1">1</a></p>
-<p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/QAJz4YKUwqw?controls=0" title="Le premier programme de NLP" frameborder="0"></iframe><center></p><p><em>premier programme de NLP SHDRLU</em></p>
 <figure class="align-center">
 <img alt="_images/nltk.jpg" src="_images/nltk.jpg" />
 </figure>
+</section>
+<section id="creation">
+<h2>Création<a class="headerlink" href="#creation" title="Lien permanent vers ce titre"></a></h2>
+<p>Création en 2001, première release en 2005, sachant que la dernière version date de février 2022.</p>
 </section>
 <section id="qui">
 <h2>Qui ?<a class="headerlink" href="#qui" title="Lien permanent vers ce titre"></a></h2>
@@ -106,10 +112,6 @@ De nos jours, les ordinateurs personnels sont partout et les applications du NLP
 <p><strong>Edward Loper</strong> est actuellement dans la recherche scientifique chez BBN Technologies (aerospatiale).
 Il a une thèse en Computer Science. Ses recherches actuelles portent sur la linguistique informatique et le machine learning. C’est lui le designer à l’origine de NLTK, mais aussi d’epydoc.</p>
 <p><strong>Ewan Klein</strong> est chercheur dans divers domaines : linguistique théorique, phonologie informatique, syntaxe et sémantique, dialogue parlé avec des machines, text mining dans les domaines de la biologie médicale et de l’histoire digitale, l’utilisation des différentes formes de données dans des contextes de recherches, et le I.O.T.</p>
-</section>
-<section id="creation">
-<h2>Création<a class="headerlink" href="#creation" title="Lien permanent vers ce titre"></a></h2>
-<p>Création en 2001, première release en 2005, sachant que la dernière version date de février 2022.</p>
 </section>
 <section id="quelques-domaines-d-utilisation-de-la-bibliotheque">
 <h2>Quelques domaines d’utilisation de la bibliothèque<a class="headerlink" href="#quelques-domaines-d-utilisation-de-la-bibliotheque" title="Lien permanent vers ce titre"></a></h2>
@@ -150,8 +152,13 @@ Il a une thèse en Computer Science. Ses recherches actuelles portent sur la lin
 <h2>Les principaux concurrents<a class="headerlink" href="#les-principaux-concurrents" title="Lien permanent vers ce titre"></a></h2>
 <ul class="simple">
 <li><p><strong>spaCy(Python)</strong></p></li>
-<li><p><strong>TextBlob(Python)</strong></p></li>
-<li><p>openNLP (Apache)</p></li>
+</ul>
+<p><em>La différence fondamentale entre NLTK et spaCy réside dans leur construction. NLTK est orientée chaîne de caractères : chaque fonction prend une chaîne de caractères et en retourne une autre. spaCy a une approche orientée objet. Chaque fonction retourne des objets plutôt que des tableaux ou des chaînes de caractères. En gros ça va plus vite et c’est plus élégant.</em></p>
+<p><strong>TextBlob(Python)</strong>
+.. NOTE::
+<em>Construit à partir de NLTK, cette bibliothèque se révèle plus accessible</em></p>
+<ul class="simple">
+<li><p>openNLP (pour Apache)</p></li>
 <li><p>Stanford CoreNLP (Python)</p></li>
 <li><p>Amazon Comprehend (API Amazon)</p></li>
 <li><p>Google Cloud Natural Language (API)</p></li>
