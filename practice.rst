@@ -12,9 +12,9 @@ Démonstration
 
 Analyse de tweets sur le theme des élections présidentielle.
 Pour cette démonstration, nous verrons comment utiliser nltk pour analyser des données textuelles en francais.
-Cette bibliothèque n'est pas très adapté à la langue francaise, il faut faire quelques recherches pour pouvoir utiliser correctement la library en langue francaise
+Cette bibliothèque n'est pas très adapté à la langue française, il faut faire quelques recherches pour pouvoir utiliser correctement la librarie en langue française
 
-La première étape de cette démonstration a été récupérer des tweets via API twitter.
+La première étape de cette démonstration a été de récupérer des tweets via l'API twitter.
 Le dataset est constitué d'environ 600 tweets anonymisés.
 
 Import des bibliothèques
@@ -37,7 +37,7 @@ Import des bibliothèques
 Chargement du fichier json
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:text-bold:`Installation des packages`
+:text-bold:`Création du dataframe`
 ::
     tweets = pd.read_json("test_tweets.json", orient="records", encoding='utf-8')
     tweets.head()
@@ -47,7 +47,7 @@ Chargement du fichier json
 Mise en place des filtres à utiliser pour préparer les données
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:text-bold:`Installation des packages`
+:text-bold:`Chargement du dictionnaire de stop words`
 ::
     # dictionnaire de mots stop en francais
     french_stopwords = set(stopwords.words('french'))
@@ -56,10 +56,7 @@ Mise en place des filtres à utiliser pour préparer les données
     french_stopwords.add('cette')
     french_stopwords.add('où')
 
-Fonction de filtrage des mots
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-:text-bold:`Installation des packages`
+:text-bold:`Fonction de filtrage des mots`
 ::
     # filtrer tous les caractères spéciaux
     regexp = re.compile(r"""[\.\!\"\s\?\-\,\'\_\@\…\/\#\:\’]+""")
@@ -70,10 +67,11 @@ Fonction de filtrage des mots
     #filtrer les stop word
     filtre_stopfr =  lambda text: [token for token in text if token.lower() not in french_stopwords]
 
-Instanciation des utilitaires en francais
+Instanciation des utilitaires français
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :text-bold:`Instanciation du tokenizer`
+
 Il est recommander de faire un tokenizer custom avec une regexp pour gérer au mieux le tronçonnage des phrases en mots
 ::
     # french tokenizer
@@ -81,6 +79,7 @@ Il est recommander de faire un tokenizer custom avec une regexp pour gérer au m
     toknizer = RegexpTokenizer(r'''\w'|\w+|[^\w\s]''')
 
 :text-bold:`Instanciation de stemmer`
+
 Il faut utiliser une classe spécifique à la langue francaise pour la recherche du radical du mot. Il existe différents stemmer pour chaque langue
 ::
     # french stemmer
@@ -91,6 +90,7 @@ Installation tagger pour la langue française
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :text-bold:`Installation tagger pour la langue française`
+
 Après quelques recherches sur les internets, le meilleur tagger pour la langue francaise est un module java, développé par stanford.
 Il semble que le plus sur moyen d'arriver à nos fins est de suivre la doc d'installation suivante:
 "http://www.linguisticsweb.org/doku.php?id=linguisticsweb:tutorials:automaticannotation:stanford_pos_tagger"
@@ -136,6 +136,7 @@ Pour ce faire, je fais quelques fonctions
         clean_text = " ".join(stemmed_tokens)
         return clean_text
 
+
 Analyse des tweets
 ~~~~~~~~~~~~~~~~~~
 :text-bold:`Fréquence de distribution des mots et top 10`
@@ -156,18 +157,43 @@ Mais que ce passe-t-il dans ce code ?
     fdist_top10 = fd.most_common(10)
     fdist_top10
 
+Output
+::
+   [
+       ('présidentielle', 323),
+       ('macron', 160),
+       ('co', 135),
+       ('élection', 127),
+       ('zemmour', 79),
+       ('campagne', 79),
+       ('emmanuel', 75)
+    ]
+
 :text-bold:`Utilisation du tagger pour définir la nature des mots`
 
 La liste des tags est ici : https://pythonprogramming.net/part-of-speech-tagging-nltk-tutorial/
 ::
     # Récupération des noms propres
-    all_names = []
+    all_names = set()
     for tweet in tweets['text']:
         all_tags = pos_tagger.tag(get_text_tokenized(tweet))
-        all_names= all_names + ([tag[0] for tag in all_tags if tag[1] == "NNP"])
+        [all_names.add(tag[0]) for tag in all_tags if tag[1] == "NOUN"]
     print(all_names)
 
-
-
+Output
+::
+    {
+        'retransmis',
+        'ménages', 
+        'entourage', 
+        'gagnante', 
+        'débat',
+        ...
+        'président', 
+        'appel', 
+        'retraite', 
+        'Français', 
+        'règles'
+    }
 À  vous de jouer !
 ------------------
