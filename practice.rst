@@ -151,6 +151,8 @@ Output
     fdist_top10 = fd.most_common(10)
     fdist_top10
 
+
+        
 **Résultat**
 ::
    [
