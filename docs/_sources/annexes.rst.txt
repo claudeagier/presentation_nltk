@@ -35,6 +35,8 @@ https://www.youtube.com/playlist?list=PLBSCvBlTOLa_wS8iy84DfyizdSs7ps7L5
 
 https://www.youtube.com/playlist?list=PLcTXcpndN-Sl9eYrKM6jtcOTgC52EJnqH
 
+http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/notebooks/td2a_TD5_Traitement_automatique_des_langues_en_Python.html
+
 
 Cheatsheet
 ~~~~~~~~~~~~
