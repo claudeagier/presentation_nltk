@@ -100,19 +100,42 @@ Pour ce faire, je crée quelques fonctions.
     def get_stem(tokenized_text):
         return [fs.stem(tokens) for tokens in tokenized_text if not wanted(tokens)]
 
-    # token + stem + reconstruction de la phrase
-    def getcleantext(text):
-        new_tokens = get_text_tokenized(text)
-        stemmed_tokens = get_stem(new_tokens)
-        clean_text = " ".join(stemmed_tokens)
-        return clean_text
+    # Contient des caractères spéciaux ?
+    regexp = re.compile(r"""[\.\!\"\s\?\-\,\'\_\@\…\/\#\:\’]+""")
+
+    def wanted(word):
+        return regexp.search(word) or word == "https"
 
 
 Analyse des tweets
 ~~~~~~~~~~~~~~~~~~
-:text-bold:`Fréquence de distribution des mots et top 10`
+:text-bold:`Fréquence de distribution des mots et top 7`
 
-**Mais que se passe-t-il dans ce code ?**
+**Question : Afficher les 7 mots les plus cités**
+::
+    fd = FreqDist()
+
+    for tweet in tweets['text']:
+        ....
+
+    
+    fdist_top10 = fd.most_common(7)
+    fdist_top10
+# indices : loop inception
+
+Output
+::
+   [
+       ('présidentielle', 323),
+       ('macron', 160),
+       ('co', 135),
+       ('élection', 127),
+       ('zemmour', 79),
+       ('campagne', 79),
+       ('emmanuel', 75)
+    ]
+
+**Réponse**
 ::
     fd = FreqDist()
 

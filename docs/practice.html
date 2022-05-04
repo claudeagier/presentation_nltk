@@ -175,19 +175,42 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 <span class="k">def</span> <span class="nf">get_stem</span><span class="p">(</span><span class="n">tokenized_text</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">fs</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span> <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">tokenized_text</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">wanted</span><span class="p">(</span><span class="n">tokens</span><span class="p">)]</span>
 
-<span class="c1"># token + stem + reconstruction de la phrase</span>
-<span class="k">def</span> <span class="nf">getcleantext</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-    <span class="n">new_tokens</span> <span class="o">=</span> <span class="n">get_text_tokenized</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-    <span class="n">stemmed_tokens</span> <span class="o">=</span> <span class="n">get_stem</span><span class="p">(</span><span class="n">new_tokens</span><span class="p">)</span>
-    <span class="n">clean_text</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">stemmed_tokens</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">clean_text</span>
+<span class="c1"># Contient des caractères spéciaux ?</span>
+<span class="n">regexp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;[\.\!\&quot;\s\?\-\,\&#39;\_\@\…\/\#\:\’]+&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">wanted</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">regexp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="ow">or</span> <span class="n">word</span> <span class="o">==</span> <span class="s2">&quot;https&quot;</span>
 </pre></div>
 </div>
 </section>
 <section id="analyse-des-tweets">
 <h3>Analyse des tweets<a class="headerlink" href="#analyse-des-tweets" title="Lien permanent vers ce titre"></a></h3>
-<p><span class="text-bold">Fréquence de distribution des mots et top 10</span></p>
-<p><strong>Mais que se passe-t-il dans ce code ?</strong></p>
+<p><span class="text-bold">Fréquence de distribution des mots et top 7</span></p>
+<p><strong>Question : Afficher les 7 mots les plus cités</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fd</span> <span class="o">=</span> <span class="n">FreqDist</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]:</span>
+    <span class="o">....</span>
+
+
+<span class="n">fdist_top10</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">fdist_top10</span>
+</pre></div>
+</div>
+<p># indices : loop inception</p>
+<p>Output</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;présidentielle&#39;</span><span class="p">,</span> <span class="mi">323</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;macron&#39;</span><span class="p">,</span> <span class="mi">160</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;co&#39;</span><span class="p">,</span> <span class="mi">135</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;élection&#39;</span><span class="p">,</span> <span class="mi">127</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;zemmour&#39;</span><span class="p">,</span> <span class="mi">79</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;campagne&#39;</span><span class="p">,</span> <span class="mi">79</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;emmanuel&#39;</span><span class="p">,</span> <span class="mi">75</span><span class="p">)</span>
+ <span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>Réponse</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fd</span> <span class="o">=</span> <span class="n">FreqDist</span><span class="p">()</span>
 
 <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]:</span>
