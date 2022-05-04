@@ -91,7 +91,7 @@ Cette méthode consiste à compter le nombre d’occurrences des mots présents 
 
 Term Frequency-Inverse Document Frequency (TF-IDF)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Cette méthode consiste à compter le nombre d’occurrences des mots présents dans le corpus pour chaque texte, que l’on divise ensuite par le nombre d’occurrences total de ces mêmes mots dans tout le corpus.
+Le TF-IDF est une méthode de pondération souvent utilisée en recherche d'information et en particulier dans la fouille de textes. Cette mesure statistique permet d'évaluer l'importance d'un terme contenu dans un document, relativement à une collection ou un corpus. Le poids augmente proportionnellement au nombre d'occurrences du mot dans le document. Il varie également en fonction de la fréquence du mot dans le corpus. 
 
 
 P.O.S. : Parts Of Speech / Tagging
