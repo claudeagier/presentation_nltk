@@ -4,17 +4,17 @@
 NLTK dans la pratique
 =====================
 
-.. figure:: ./Images/idea.png
-    :align: center
+    .. figure:: ./Images/idea.png
+        :align: center
 
 Démonstration
 -------------
 
 Analyse de tweets sur le thème de l'élection présidentielle.
-Pour cette démonstration, nous verrons comment utiliser nltk pour analyser des données textuelles en francais.
-Cette bibliothèque n'est pas très adapté à la langue française, il faut faire quelques recherches pour pouvoir utiliser correctement la librarie en langue française.
+Pour cette démonstration, nous verrons comment utiliser NLTK pour analyser des données textuelles en français.
+Cette bibliothèque n'est pas très adaptée à la langue française : il faut donc faire quelques recherches pour pouvoir utiliser correctement cette librairie en français.
 
-La première étape de cette démonstration a été de récupérer des tweets via l'API twitter.
+La première étape de cette démonstration a été de récupérer des tweets via l'API Twitter.
 Le dataset est constitué d'environ 600 tweets anonymisés.
 
 Import des bibliothèques
@@ -25,7 +25,7 @@ Import des bibliothèques
     import nltk
     from nltk.corpus import stopwords
 
-    # fonctions, classes et méthodes pour l'analyse du francais
+    # fonctions, classes et méthodes pour l'analyse du français
     from nltk import RegexpTokenizer
     from nltk.stem.snowball import FrenchStemmer
 
@@ -47,12 +47,12 @@ Chargement du fichier json
 Mise en place des filtres à utiliser pour préparer les données
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:text-bold:`Chargement du dictionnaire de stop words`
+:text-bold:`Chargement du dictionnaire de stop-words`
 ::
     # dictionnaire de mots stop en francais
     french_stopwords = set(stopwords.words('french'))
 
-    # add stop words
+    # add stop-words
     french_stopwords.add('cette')
     french_stopwords.add('où')
 
@@ -64,7 +64,7 @@ Mise en place des filtres à utiliser pour préparer les données
     def wanted(word):
         return regexp.search(word) or word == "https"
 
-    #filtrer les stop word
+    #filtrer les stop-words
     filtre_stopfr =  lambda text: [token for token in text if token.lower() not in french_stopwords]
 
 Instanciation des utilitaires français
@@ -72,7 +72,7 @@ Instanciation des utilitaires français
 
 :text-bold:`Instanciation du tokenizer`
 
-Il est recommander de faire un tokenizer custom avec une regexp pour gérer au mieux le tronçonnage des phrases en mots
+Il est recommandé de faire un tokenizer custom avec une regexp pour gérer au mieux le tronçonnage des phrases en mots.
 ::
     # french tokenizer
     # from nltk import RegexpTokenizer
@@ -80,7 +80,7 @@ Il est recommander de faire un tokenizer custom avec une regexp pour gérer au m
 
 :text-bold:`Instanciation de stemmer`
 
-Il faut utiliser une classe spécifique à la langue francaise pour la recherche du radical du mot. Il existe différents stemmer pour chaque langue
+Il faut utiliser une classe spécifique à la langue française pour la recherche du radical du mot. Il existe différents stemmers pour chaque langue.
 ::
     # french stemmer
     # from nltk.stem.snowball import FrenchStemmer
@@ -89,7 +89,7 @@ Il faut utiliser une classe spécifique à la langue francaise pour la recherche
 
 :text-bold:`Instancier c'est bien, s'en servir c'est mieux`
 
-Pour ce faire, je fais quelques fonctions
+Pour ce faire, je crée quelques fonctions.
 ::
     # tokenization de tous les mots 
     def get_text_tokenized(text):
@@ -151,7 +151,7 @@ Output
     fdist_top10 = fd.most_common(10)
     fdist_top10
 
-Output
+**Résultat**
 ::
    [
        ('présidentielle', 323),
@@ -163,21 +163,22 @@ Output
        ('emmanuel', 75)
     ]
 
-Installation tagger pour la langue française
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Installation d'un tagger pour la langue française
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :text-bold:`Installation tagger pour la langue française`
 
-Après quelques recherches sur les internets, le meilleur tagger pour la langue francaise est un module java, développé par stanford.
+Après quelques recherches sur les internets, le meilleur tagger pour la langue française est un module Java, développé par Stanford.
 Il semble que le plus sûr moyen d'arriver à nos fins est de suivre la doc d'installation suivante:
 "http://www.linguisticsweb.org/doku.php?id=linguisticsweb:tutorials:automaticannotation:stanford_pos_tagger"
 
-Il faut donc utiliser un module java dans notre code python (oui , on peut)
+Il faut donc utiliser un module Java dans notre code Python (oui, on peut) :
  - installer jdk 8
  - téléchager le .jar  Stanford Tagger version 4.2.x 
- - unzip
+ - dézipper
  - copier le répertoire dézippé dans "C:/Users/Public/utility/"
-Ensuite dans le code
+
+Ensuite dans le code :
 ::
     from nltk.tag.stanford import StanfordPOSTagger
     import os
@@ -219,5 +220,3 @@ Output
         'Français', 
         'règles'
     }
-À  vous de jouer !
-------------------

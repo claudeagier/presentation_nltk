@@ -19,18 +19,25 @@ http://www2.agroparistech.fr/ufr-info/membres/cornuejols/Teaching/AGRO/Cours-IA_
 
 https://fr.acervolima.com/application-de-bayes-naives-multinomiales-aux-problemes-de-pnl/
 
+https://cs.stanford.edu/people/eroberts/courses/soco/projects/2004-05/nlp/overview_history.html
+
 Un livre
 ~~~~~~~~~
 
 Bird, Steven, Edward Loper and Ewan Klein (2009), *Natural Language Processing with Python.* O’Reilly Media Inc.
 
-Vidéos
-~~~~~~~~~
+Vidéos : quelques tutoriels
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 https://www.youtube.com/watch?v=X2vAabgKiuM 
 
 https://www.youtube.com/playlist?list=PLBSCvBlTOLa_wS8iy84DfyizdSs7ps7L5
 
 https://www.youtube.com/playlist?list=PLcTXcpndN-Sl9eYrKM6jtcOTgC52EJnqH
+
+
+Cheatsheet
+~~~~~~~~~~~~
+https://cheatography.com/murenei/cheat-sheets/natural-language-processing-with-python-and-nltk/pdf/
 
 

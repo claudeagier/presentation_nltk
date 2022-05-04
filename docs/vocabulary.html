@@ -29,7 +29,8 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> presentation_ntlk
+            <a href="index.html">
+            <img src="_static/python_nltk.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -43,19 +44,19 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="history.html">Un peu d’histoire</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Vocabulaire</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#considerations-linguistiques-et-probabilistes">Considérations linguistiques et probabilistes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#considerations-linguistiques">Considérations linguistiques</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#langage">Langage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#linguistique">Linguistique</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sens">Sens</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#analyse-semantique">Analyse sémantique</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#analyse-lexicale">Analyse lexicale</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#naive-bayes-classifier">Naive Bayes Classifier</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#vocabulaire-nltk">Vocabulaire NLTK</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#corpus">Corpus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#wordnet">Wordnet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wordnet">WordNet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tokenization">Tokenization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#n-e-r-name-entity-recognition">N.E.R. : Name Entity Recognition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#stop-word">Stop-word</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#stemming">Stemming</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lemmatisation">Lemmatisation</a></li>
@@ -63,9 +64,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#term-frequency-inverse-document-frequency-tf-idf">Term Frequency-Inverse Document Frequency (TF-IDF)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#p-o-s-parts-of-speech-tagging">P.O.S. : Parts Of Speech / Tagging</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#chunking">Chunking</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#n-e-r-name-entity-recognition">N.E.R. : Name Entity Recognition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#parsing">Parsing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#arbre-syntaxique">Arbre syntaxique</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#syntax-tree">Syntax-tree</a></li>
 </ul>
 </li>
 </ul>
@@ -101,15 +101,13 @@
              
   <section id="vocabulaire">
 <h1>Vocabulaire<a class="headerlink" href="#vocabulaire" title="Lien permanent vers ce titre"></a></h1>
-<figure class="align-center">
+<blockquote>
+<div><figure class="align-center">
 <img alt="_images/voc.jpg" src="_images/voc.jpg" />
 </figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Nous allons bien sûr rester ici dans le domaine du vocabulaire propre à la bibliothèque et ne pas nous attarder sur des notions de linguistique qui s’avéreraient trop complexes.</p>
-</div>
-<section id="considerations-linguistiques-et-probabilistes">
-<h2>Considérations linguistiques et probabilistes<a class="headerlink" href="#considerations-linguistiques-et-probabilistes" title="Lien permanent vers ce titre"></a></h2>
+</div></blockquote>
+<section id="considerations-linguistiques">
+<h2>Considérations linguistiques<a class="headerlink" href="#considerations-linguistiques" title="Lien permanent vers ce titre"></a></h2>
 <section id="langage">
 <h3>Langage<a class="headerlink" href="#langage" title="Lien permanent vers ce titre"></a></h3>
 <p>Au sens large, le langage se définit comme un système de signes qui associe des mots selon des règles grammaticales précises. Le langage renvoit à la faculté de raisonner, de nommer les choses et de communiquer avec autrui.</p>
@@ -117,13 +115,18 @@
 <section id="linguistique">
 <h3>Linguistique<a class="headerlink" href="#linguistique" title="Lien permanent vers ce titre"></a></h3>
 <p>Science qui a la langue pour objet.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="_images/wat.jpg" src="_images/wat.jpg" />
+</figure>
+</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Au passage, ceci est un mythe, merci de l’oublier pour de bon.</p>
-</div>
 <figure class="align-default">
 <img alt="_images/wrong.png" src="_images/wrong.png" />
 </figure>
+</div>
 </section>
 <section id="sens">
 <h3>Sens<a class="headerlink" href="#sens" title="Lien permanent vers ce titre"></a></h3>
@@ -131,7 +134,7 @@
 </section>
 <section id="analyse-semantique">
 <h3>Analyse sémantique<a class="headerlink" href="#analyse-semantique" title="Lien permanent vers ce titre"></a></h3>
-<p>L’analyse sémantique consiste à établir la signification d’une phrase en utilisant le sens des éléments la composant. Dans la NLP, elle s’appuie sur les éléments suivants :</p>
+<p>L’analyse sémantique consiste à établir la signification d’une phrase en utilisant le sens des éléments qui la composent. Dans la NLP, elle s’appuie sur les éléments suivants :</p>
 <ul class="simple">
 <li><p><strong>l’approche linguistique</strong>, avec l’établissement a priori des règles en étudiant le langage ;</p></li>
 <li><p><strong>l’approche statistique</strong>, avec pour base l’analyse de corpus importants, à partir desquels la machine va extraire des règles grâce à l’apprentissage automatique (machine learning) ;</p></li>
@@ -142,33 +145,26 @@
 <h3>Analyse lexicale<a class="headerlink" href="#analyse-lexicale" title="Lien permanent vers ce titre"></a></h3>
 <p>L’analyse lexicale est fondée sur la statistique fréquentielle, c’est-à-dire la redondance des traces lexicales et les proximités entre les mots.</p>
 </section>
-<section id="naive-bayes-classifier">
-<h3>Naive Bayes Classifier<a class="headerlink" href="#naive-bayes-classifier" title="Lien permanent vers ce titre"></a></h3>
-<p>C’est un peu l’esprit du fonctionnement de la bibliothèque NLTK.
-Le naive Bayes classifier se base sur le théorème de Bayes. Ce dernier est un classique de la théorie des probabilités. Ce théorème est fondé sur les probabilités conditionnelles.</p>
-<p><strong>Probabilité conditionnelle</strong> : quelle est la probabilité qu’un événement se produise sachant qu’un autre événement s’est déjà produit ?</p>
-<p>Le terme “naive” vient du fait qu’on suppose l’indépendance des variables.
-Ce théorème donne surtout de très bon résultats pour la classification. Ceci est paradoxal car on suppose une indépendance forte entre les différentes conditions.</p>
-<figure class="align-center">
-<img alt="_images/wat.jpg" src="_images/wat.jpg" />
-</figure>
-</section>
 </section>
 <section id="vocabulaire-nltk">
 <h2>Vocabulaire NLTK<a class="headerlink" href="#vocabulaire-nltk" title="Lien permanent vers ce titre"></a></h2>
 <section id="corpus">
 <h3>Corpus<a class="headerlink" href="#corpus" title="Lien permanent vers ce titre"></a></h3>
-<p>Le package nltk.corpus est un ensemble de classes qui permettent de lire un corpus. Classes qui peuvent être utilisées pour accéder aux contenus d’un ensemble de corpora variés. La liste complète de ces corpora est donnée ici : <a class="reference external" href="https://www.nltk.org/nltk_data/">https://www.nltk.org/nltk_data/</a></p>
+<p>Le package nltk.corpus est un ensemble de classes qui permettent de lire un corpus. Classes qui peuvent être utilisées pour accéder aux contenus d’un ensemble de corpus variés. La liste complète de ces corpora est donnée ici : <a class="reference external" href="https://www.nltk.org/nltk_data/">https://www.nltk.org/nltk_data/</a></p>
 </section>
 <section id="wordnet">
-<h3>Wordnet<a class="headerlink" href="#wordnet" title="Lien permanent vers ce titre"></a></h3>
-<p>WordNet est une base de données lexicale développée par des linguistes du laboratoire des sciences cognitives de l’université de Princeton depuis une vingtaine d’années. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d’autres langues existent, mais la version anglaise est cependant la plus complète à ce jour <a class="footnote-reference brackets" href="#id2" id="id1">1</a>
-Elle est intégrée au sein de la bibliothèque NLTK.
+<h3>WordNet<a class="headerlink" href="#wordnet" title="Lien permanent vers ce titre"></a></h3>
+<p>WordNet est une base de données lexicale open source développée par des linguistes du laboratoire des sciences cognitives de l’université de Princeton depuis une vingtaine d’années. Son but est de répertorier, classifier et mettre en relation de diverses manières le contenu sémantique et lexical de la langue anglaise. Des versions de WordNet pour d’autres langues existent, mais la version anglaise est cependant la plus complète à ce jour. <a class="footnote-reference brackets" href="#id2" id="id1">1</a>
+Elle est intéégrée au sein de la bibliothèque NLTK.
 Wordnet permet aussi d’obtenir des synonymes ou encore des antonymes.</p>
 </section>
 <section id="tokenization">
 <h3>Tokenization<a class="headerlink" href="#tokenization" title="Lien permanent vers ce titre"></a></h3>
 <p>Il s’agit de découper le texte en « tokens », le token étant une unité sémantique individuelle avec un sens grammatical. En tokenizant, si un mot apparaît plusieurs fois dans le texte, il sera compté plusieurs fois.</p>
+</section>
+<section id="n-e-r-name-entity-recognition">
+<h3>N.E.R. : Name Entity Recognition<a class="headerlink" href="#n-e-r-name-entity-recognition" title="Lien permanent vers ce titre"></a></h3>
+<p>Vient en complémentarité de la tokenization d’une texte pour identifier des catégories de noms : entreprises, locations, géopolitiques, organisations, personnes, géo-sociologiques. Se fait également à l’aide de la méthode de chunking.</p>
 </section>
 <section id="stop-word">
 <h3>Stop-word<a class="headerlink" href="#stop-word" title="Lien permanent vers ce titre"></a></h3>
@@ -186,10 +182,12 @@ Il existe plusieurs types de lemmatisation : Porter et Lancaster qui sont basée
 <section id="term-frequency-tf">
 <h3>Term-Frequency (TF)<a class="headerlink" href="#term-frequency-tf" title="Lien permanent vers ce titre"></a></h3>
 <p>Cette méthode consiste à compter le nombre d’occurrences des mots présents dans le corpus pour chaque texte. Chaque texte est alors représenté par un vecteur d’occurrences. On parle généralement de Bag-Of-Word, ou sac de mots en français.</p>
-<div class="admonition note">
+<blockquote>
+<div><div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Cette approche présente un inconvénient majeur : certains mots sont par nature plus utilisés que d’autres, ce qui peut conduire le modèle à des résultats erronés.</p>
 </div>
+</div></blockquote>
 </section>
 <section id="term-frequency-inverse-document-frequency-tf-idf">
 <h3>Term Frequency-Inverse Document Frequency (TF-IDF)<a class="headerlink" href="#term-frequency-inverse-document-frequency-tf-idf" title="Lien permanent vers ce titre"></a></h3>
@@ -203,18 +201,15 @@ Il existe plusieurs types de lemmatisation : Porter et Lancaster qui sont basée
 <h3>Chunking<a class="headerlink" href="#chunking" title="Lien permanent vers ce titre"></a></h3>
 <p>Chunk = morceau. Rassembler des éléments de langages individuels en plus gros groupes (verbaux, nominaux, compléments divers, etc.).</p>
 </section>
-<section id="n-e-r-name-entity-recognition">
-<h3>N.E.R. : Name Entity Recognition<a class="headerlink" href="#n-e-r-name-entity-recognition" title="Lien permanent vers ce titre"></a></h3>
-<p>Vient en complémentarité de la tokenization d’une texte pour identifier des catégories de noms : entreprises, locations, géopolitiques, organisations, personnes, géo-sociologiques. Se fait également à l’aide de la méthode de chunking.</p>
-</section>
 <section id="parsing">
 <h3>Parsing<a class="headerlink" href="#parsing" title="Lien permanent vers ce titre"></a></h3>
 <p>Méthode utilisée pour passer en revue tous les éléments d’un texte afin d’en dégager une arborescence. Bien qu’il puisse être utilisé pour identifier les différents éléments d’un texte, le parsing peut aussi servir à analyser les morphèmes (soit les composantes morphologiques d’un mot).</p>
 </section>
-<section id="arbre-syntaxique">
-<h3>Arbre syntaxique<a class="headerlink" href="#arbre-syntaxique" title="Lien permanent vers ce titre"></a></h3>
-<p>Il représente la structure syntaxique d’une phrase. Dans la bibliothèque NLTK, l’arbre donne une représentation visuelle de l’organisation syntaxique de la phrase, basée sur le travail de tagging . Chaque rameau est relié à une branche par un « node » (nœud), elle-même reliée au tronc qui représente la phrase dans son ensemble.</p>
-<figure class="align-center">
+<section id="syntax-tree">
+<h3>Syntax-tree<a class="headerlink" href="#syntax-tree" title="Lien permanent vers ce titre"></a></h3>
+<p>Il représente la structure syntaxique d’une phrase, de manière visuelle, graphique. Dans la bibliothèque NLTK, l’arbre donne une représentation visuelle de l’organisation syntaxique de la phrase, basée sur le travail de tagging . Chaque rameau est relié à une branche par un « node » (nœud), elle-même reliée au tronc qui représente la phrase dans son ensemble.</p>
+<blockquote>
+<div><figure class="align-center">
 <img alt="_images/syntax_tree.png" src="_images/syntax_tree.png" />
 </figure>
 <div class="admonition warning">
@@ -222,6 +217,7 @@ Il existe plusieurs types de lemmatisation : Porter et Lancaster qui sont basée
 <p>Plus le vocabulaire du corpus est riche, plus la taille des vecteurs est grande, ce qui peut représenter un problème pour les modèles d’apprentissage.
 Le comptage d’occurrences de mots ne permet pas de rendre compte de leur agencement et donc du sens des phrases.</p>
 </div>
+</div></blockquote>
 <dl class="footnote brackets">
 <dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p><em>Source</em> : <a class="reference external" href="https://fr.wikipedia.org/wiki/WordNet">https://fr.wikipedia.org/wiki/WordNet</a></p>

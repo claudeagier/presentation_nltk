@@ -1,0 +1,48 @@
+.text-bold{color:#3095D9 ;
+    font-weight:bold;
+}
+h1 {
+    color:#2E4859;
+    font-weight: bold;
+    text-align: center;
+    font-size: xxx-large;
+     
+}
+
+h2 {
+    color:#2472A6;
+    font-weight: bold;  
+}
+
+h3 {
+    color:#2980B9;
+    font-weight:bold
+}
+
+h4 {
+    color: #74B4DF;
+    font-weight:bold
+}
+
+div {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .wy-side-nav-search .wy-dropdown > a img.logo, .wy-side-nav-search > a img.logo{
+        width: 106px;
+        height: 120px;
+        
+      
+     }
+
+.wy-side-nav-search {
+display: block;
+width: 300px;
+padding: .809em;
+margin-bottom: .809em;
+z-index: 200;
+background-color: #c5cbd7;
+text-align: center;
+color: #fcfcfc;
+}

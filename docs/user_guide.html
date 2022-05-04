@@ -29,7 +29,8 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> presentation_ntlk
+            <a href="index.html">
+            <img src="_static/python_nltk.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -129,9 +130,9 @@ versions 3.7, 3.8, 3.9 or 3.10</p>
 <section id="principes">
 <h2>Principes<a class="headerlink" href="#principes" title="Lien permanent vers ce titre"></a></h2>
 <ul class="simple">
-<li><p>Pré-traitement : une étape qui cherche à standardiser du texte afin de rendre son usage plus facile.</p></li>
-<li><p>Représentation du texte comme un vecteur : cette étape peut être effectuée via des techniques de sacs de mots (Bag of Words) ou Term Frequency-Inverse Document Frequency (Tf-IdF). On peut également apprendre des représentations vectorielles (embedding) par apprentissage profond.</p></li>
-<li><p>Classification, trouver la phrase la plus similaire… (optionnel)</p></li>
+<li><p><strong>Pré-traitement</strong> : une étape qui cherche à standardiser du texte afin de rendre son usage plus facile.</p></li>
+<li><p><strong>Représentation du texte comme un vecteur</strong> : cette étape peut être effectuée via des techniques de sacs de mots (Bag of Words) ou Term Frequency-Inverse Document Frequency (Tf-IdF). On peut également apprendre des représentations vectorielles (embedding) par apprentissage profond.</p></li>
+<li><p><strong>Classification</strong> : trouver la phrase la plus similaire… (optionnel)</p></li>
 </ul>
 <figure class="align-default">
 <img alt="_images/schema.png" src="_images/schema.png" />
@@ -139,13 +140,21 @@ versions 3.7, 3.8, 3.9 or 3.10</p>
 </section>
 <section id="methode-orthodoxie">
 <h2>Méthode (Orthodoxie) :<a class="headerlink" href="#methode-orthodoxie" title="Lien permanent vers ce titre"></a></h2>
-<p>L’orthodoxie linguistique informatique, après le concile de Californie de 1260, sous le patronage oecuménique des représentants de la Vraie Religion (Python) ainsi que des autres hérésies tolérées (R, Ruby, Pascal, C+, etc.), et après acceptation du phonème comme un et indivisible, procédant du Verbe vrai et étant le Son originel, distingue deux méthodes essentielles :</p>
-<p><strong>La partie « linguistique »</strong>, qui consiste à prétraiter et transformer les informations en entrée en un jeu de données exploitable.</p>
-<p><strong>La partie « apprentissage automatique »</strong> ou « Data Science », qui porte sur l’application de modèles de Machine Learning ou Deep Learning à ce jeu de données.</p>
-<figure class="align-center">
+<blockquote>
+<div><figure class="align-center">
 <img alt="_images/ortho.jpg" src="_images/ortho.jpg" />
 </figure>
-<p>De manière très synthétique, on peut résumer l’utilisation de la bibliothèque NLTK en 4 grandes étapes : <strong>préparation</strong>, <strong>extraction</strong>, <strong>analyse</strong>, <strong>prediction</strong>.</p>
+</div></blockquote>
+<p>L’orthodoxie linguistique informatique, après le concile de Californie de 1260, sous le patronage oecuménique des représentants de la Vraie Religion (Python) ainsi que des autres hérésies tolérées (R, Ruby, Pascal, C+, etc.), et après acceptation du phonème comme un et indivisible, procédant du Verbe vrai et étant le Son originel, distingue deux méthodes essentielles :</p>
+<p><strong>La partie « linguistique »</strong>, qui consiste à prétraiter et transformer les informations entrées en un jeu de données exploitable.</p>
+<p><strong>La partie « apprentissage automatique »</strong> ou « Data Science », qui porte sur l’application de modèles de Machine Learning ou Deep Learning à ce jeu de données.</p>
+<p>De manière très synthétique, on peut résumer l’utilisation de la bibliothèque NLTK en 4 grandes points : <strong>préparation</strong>, <strong>extraction</strong>, <strong>analyse</strong>, <strong>prediction</strong>.
+Ci-dessous : <em>des exemples d’analyse du langage et les modules correspondant</em>.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="_images/tableau.png" src="_images/tableau.png" />
+</figure>
+</div></blockquote>
 </section>
 <section id="contraintes">
 <h2>Contraintes<a class="headerlink" href="#contraintes" title="Lien permanent vers ce titre"></a></h2>
@@ -160,8 +169,8 @@ Les dernières failles de sécurité répertoriées (et réparées) concernaient
 <h2>Limites<a class="headerlink" href="#limites" title="Lien permanent vers ce titre"></a></h2>
 <p>Une machine, aussi complexe soit-elle, n’est pas encore l’équivalent d’un être humain…</p>
 <p>Par nature, le langage est ambigu. La machine, faute d’indices suffisamment saillants et de connaissances contextuelles, peut manquer l’interprétation juste. Il s’agit d’un problème vivace, malgré les progrès du machine learning et la présence de corpus de données toujours plus nombreux.</p>
-<p>On parle de parasitisme computationnel, soit « la production d’analyses indésirables, inappropriées, résultant de l’application de règles tout à fait fondées linguistiquement par ailleurs »
-L’ambiguïté brouille depuis longtemps les cartes. Le problème est apparu d’une manière qui a marqué les esprits : lors de la première conférence internationale de traduction automatique, au MIT en 1962. Traduite en russe puis de nouveau en anglais, la phrase « The spirit is willing but the flesh is weak » est devenue ainsi « Vodka is strong but meat is rotten ». <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
+<p>On parle de <strong>parasitisme computationnel</strong>, soit « la production d’analyses indésirables, inappropriées, résultant de l’application de règles tout à fait fondées linguistiquement par ailleurs ».
+L’ambiguïté brouille depuis longtemps les cartes. Le problème est apparu d’une manière qui a marqué les esprits : lors de la première conférence internationale de traduction automatique, au MIT en 1962. Traduite en russe puis de nouveau en anglais, la phrase « The spirit is willing but the flesh is weak » (Fort est l’esprit, faible est la chair) est devenue ainsi « Vodka is strong but meat is rotten » (Forte est la vodka mais la viande est pourrie). <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
 <dl class="footnote brackets">
 <dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p><a class="reference external" href="https://blog.clevy.io/conversationnel/introduction-au-nlp-5eme-partie/">https://blog.clevy.io/conversationnel/introduction-au-nlp-5eme-partie/</a></p>
