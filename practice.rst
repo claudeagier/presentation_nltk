@@ -61,7 +61,7 @@ Mise en place des filtres à utiliser pour préparer les données
     # filtrer tous les caractères spéciaux
     regexp = re.compile(r"""[\.\!\"\s\?\-\,\'\_\@\…\/\#\:\’]+""")
 
-    def wanted(word):
+    def avoid(word):
         return regexp.search(word) or word == "https"
 
     #filtrer les stop-words
@@ -98,12 +98,12 @@ Pour ce faire, je crée quelques fonctions.
 
     # stemmatisation des mots (racine)
     def get_stem(tokenized_text):
-        return [fs.stem(tokens) for tokens in tokenized_text if not wanted(tokens)]
+        return [fs.stem(tokens) for tokens in tokenized_text if not avoid(tokens)]
 
     # Contient des caractères spéciaux ?
     regexp = re.compile(r"""[\.\!\"\s\?\-\,\'\_\@\…\/\#\:\’]+""")
 
-    def wanted(word):
+    def avoid(word):
         return regexp.search(word) or word == "https"
 
 
@@ -119,8 +119,8 @@ Analyse des tweets
         ....
 
     
-    fdist_top10 = fd.most_common(7)
-    fdist_top10
+    fdist_top7 = fd.most_common(7)
+    fdist_top7
 # indices : loop inception
 
 Output
@@ -142,14 +142,14 @@ Output
     for tweet in tweets['text']:
         #frequence distribution
         for word in get_text_tokenized(tweet):
-            if not wanted(word):
+            if not avoid(word):
                 fd[word.lower()]+=1  
             
     # for key, value in  enumerate(fd):
     #     print(f"{key} : {value}")
 
-    fdist_top10 = fd.most_common(10)
-    fdist_top10
+    fdist_top7 = fd.most_common(7)
+    fdist_top7
 
 
         
