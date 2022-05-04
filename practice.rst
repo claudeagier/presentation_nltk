@@ -128,6 +128,10 @@ Analyse des tweets
     fdist_top10 = fd.most_common(10)
     fdist_top10
 
+    
+.. figure:: ./Images/geo.jpg
+        :align: center
+        
 **Résultat**
 ::
    [
