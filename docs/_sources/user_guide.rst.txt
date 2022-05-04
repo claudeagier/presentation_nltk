@@ -98,6 +98,14 @@ Par nature, le langage est ambigu. La machine, faute d’indices suffisamment sa
 On parle de **parasitisme computationnel**, soit « la production d’analyses indésirables, inappropriées, résultant de l’application de règles tout à fait fondées linguistiquement par ailleurs ». 
 L’ambiguïté brouille depuis longtemps les cartes. Le problème est apparu d’une manière qui a marqué les esprits : lors de la première conférence internationale de traduction automatique, au MIT en 1962. Traduite en russe puis de nouveau en anglais, la phrase « The spirit is willing but the flesh is weak » (Fort est l'esprit, faible est la chair) est devenue ainsi « Vodka is strong but meat is rotten » (Forte est la vodka mais la viande est pourrie). [#]_
 
+Il existe beaucoup de ressources pour le NLP de la langue anglaise, mais il en existe beaucoup moins pour la langue française.
 
+.. NOTE::
+    Ces bibliothèques sont construites comme des caisses à outils, on peut utiliser certains modules indépendemment.
+    
+    Si une préconisation est à faire dans le cadre d'un projet en langue française:
+        Il faut utiliser plus spécifiquement:
+            - Spacy avec en compplément NLTK,
+            - Transformers pour l' ia
 
 .. [#] https://blog.clevy.io/conversationnel/introduction-au-nlp-5eme-partie/

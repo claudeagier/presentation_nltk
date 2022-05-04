@@ -29,8 +29,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html">
-            <img src="_static/python_nltk.png" class="logo" alt="Logo"/>
+            <a href="index.html" class="icon icon-home"> presentation_ntlk
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -140,7 +139,7 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># filtrer tous les caractères spéciaux</span>
 <span class="n">regexp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;[\.\!\&quot;\s\?\-\,\&#39;\_\@\…\/\#\:\’]+&quot;&quot;&quot;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">wanted</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">avoid</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">regexp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="ow">or</span> <span class="n">word</span> <span class="o">==</span> <span class="s2">&quot;https&quot;</span>
 
 <span class="c1">#filtrer les stop-words</span>
@@ -173,12 +172,12 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 
 <span class="c1"># stemmatisation des mots (racine)</span>
 <span class="k">def</span> <span class="nf">get_stem</span><span class="p">(</span><span class="n">tokenized_text</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">fs</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span> <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">tokenized_text</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">wanted</span><span class="p">(</span><span class="n">tokens</span><span class="p">)]</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">fs</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span> <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">tokenized_text</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">avoid</span><span class="p">(</span><span class="n">tokens</span><span class="p">)]</span>
 
 <span class="c1"># Contient des caractères spéciaux ?</span>
 <span class="n">regexp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;[\.\!\&quot;\s\?\-\,\&#39;\_\@\…\/\#\:\’]+&quot;&quot;&quot;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">wanted</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">avoid</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">regexp</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="ow">or</span> <span class="n">word</span> <span class="o">==</span> <span class="s2">&quot;https&quot;</span>
 </pre></div>
 </div>
@@ -193,8 +192,8 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
     <span class="o">....</span>
 
 
-<span class="n">fdist_top10</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-<span class="n">fdist_top10</span>
+<span class="n">fdist_top7</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">fdist_top7</span>
 </pre></div>
 </div>
 <p># indices : loop inception</p>
@@ -216,14 +215,14 @@ Le dataset est constitué d’environ 600 tweets anonymisés.</p>
 <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]:</span>
     <span class="c1">#frequence distribution</span>
     <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">get_text_tokenized</span><span class="p">(</span><span class="n">tweet</span><span class="p">):</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">wanted</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">avoid</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
             <span class="n">fd</span><span class="p">[</span><span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span><span class="o">+=</span><span class="mi">1</span>
 
 <span class="c1"># for key, value in  enumerate(fd):</span>
 <span class="c1">#     print(f&quot;{key} : {value}&quot;)</span>
 
-<span class="n">fdist_top10</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">fdist_top10</span>
+<span class="n">fdist_top7</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">fdist_top7</span>
 </pre></div>
 </div>
 <p><strong>Résultat</strong></p>
