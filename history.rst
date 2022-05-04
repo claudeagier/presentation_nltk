@@ -21,7 +21,7 @@ Après les années 1970, les écoles de recherches dans le domaine se sont encor
 
 .. raw:: html
     
-    <p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/QAJz4YKUwqw?controls=0" title="Le premier programme de NLP" frameborder="0"></iframe></center></p>
+    <p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/QAJz4YKUwqw?controls=0" title="Le premier programme de NLP : SHDRLU" frameborder="0"></iframe></center></p>
 
 Un autre domaine auquel le NLP s’est attaché dans les années 70 est celui du modèle discursif. Il examine les relations et échanges entre personnes et ordinateurs : par exemple pour que l’ordinateur puisse répondre « moi » à une question formulée avec un « tu ».
 
