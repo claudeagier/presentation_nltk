@@ -123,6 +123,7 @@ Les principaux concurrents
 * Google Cloud Natural Language (API)
 * FuzzyWuzzy(Python)
 * Watson Tone Analyzer (IBM)
+* Différents frameworks spécialisés : Transformers (embedding, tokenization, génération de texte), Bert (prédiction de texte), etc.
 * Elon Musk ?
 
 La communauté

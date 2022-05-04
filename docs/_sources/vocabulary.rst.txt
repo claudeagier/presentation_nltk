@@ -83,7 +83,7 @@ Il existe plusieurs types de lemmatisation : Porter et Lancaster qui sont basée
 Term-Frequency (TF)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Cette méthode consiste à compter le nombre d’occurrences des mots présents dans le corpus pour chaque texte. Chaque texte est alors représenté par un vecteur d’occurrences. On parle généralement de Bag-Of-Word, ou sac de mots en français.
+Cette méthode consiste à compter le nombre d’occurrences des mots présents dans le corpus pour chaque texte. Chaque texte est alors représenté par un vecteur d’occurrences. On parle généralement de Bag-Of-Word, ou sac de mots en français. Ces bag-of-words peuvent aussi être classées en "n-grammes". Soit un texte avec n caractères : on peut déterminer la récurrence de certains groupes de mots (trigrammes, quadrigrammes, etc.) en utilisant la méthode des n-grammes.
 
     .. NOTE::
 
