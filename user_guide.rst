@@ -105,7 +105,7 @@ Il existe beaucoup de ressources pour le NLP de la langue anglaise, mais il en e
     
     Si une préconisation est à faire dans le cadre d'un projet en langue française:
         Il faut utiliser plus spécifiquement:
-            - Spacy avec en compplément NLTK,
+            - Spacy avec en complément NLTK,
             - Transformers pour l' ia
 
 .. [#] https://blog.clevy.io/conversationnel/introduction-au-nlp-5eme-partie/
