@@ -72,7 +72,7 @@ L'orthodoxie linguistique informatique, après le concile de Californie de 1260,
 **La partie « apprentissage automatique »** ou « Data Science », qui porte sur l’application de modèles de Machine Learning ou Deep Learning à ce jeu de données.
 
 
-De manière très synthétique, on peut résumer l'utilisation de la bibliothèque NLTK en 4 grandes points : **préparation**, **extraction**, **analyse**, **prediction**.
+De manière très synthétique, on peut résumer l'utilisation de la bibliothèque NLTK en 4 grands points : **préparation**, **extraction**, **analyse**, **prediction**.
 Ci-dessous : *des exemples d'analyse du langage et les modules correspondant*.
 
     .. figure:: ./Images/tableau.png
@@ -105,7 +105,7 @@ Il existe beaucoup de ressources pour le NLP de la langue anglaise, mais il en e
     
     Si une préconisation est à faire dans le cadre d'un projet en langue française:
         Il faut utiliser plus spécifiquement:
-            - Spacy avec en complément NLTK,
+            - Spacy avec en compplément NLTK,
             - Transformers pour l' ia
 
 .. [#] https://blog.clevy.io/conversationnel/introduction-au-nlp-5eme-partie/
